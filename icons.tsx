@@ -1,4 +1,9 @@
 import React from 'react';
+export const ChevronRight = ({ size = 24, ...$ }: JSX.IntrinsicElements['svg'] & { size?: number }) => (
+  <svg height={size} viewBox="0 0 24 24" width={size} xmlns="http://www.w3.org/2000/svg" {...$}>
+    <path d="M10 6 8.59 7.41l4.58 4.58-4.58 4.58L10 17.98l6-6-6-6" fill="currentColor" />
+  </svg>
+);
 export const Plane = ({ size = 24, ...$ }: JSX.IntrinsicElements['svg'] & { size?: number }) => (
   <svg height={size} viewBox="0 0 24 24" width={size} xmlns="http://www.w3.org/2000/svg" {...$}>
     <path
