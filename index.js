@@ -16,7 +16,7 @@ function react(name, svg) {
     .replace(/height="[^"]+"/, 'height={size}')
     .replace(/width="[^"]+"/, 'width={size}');
 
-  return `export const ${name} = ({ size = 24, ...$ }: JSX.IntrinsicElements['svg'] | { size?: number }) => ${svg};`;
+  return `export const ${name} = ({ size = 24, ...$ }: JSX.IntrinsicElements['svg'] & { size?: number }) => ${svg};`;
 }
 
 const tsx = ["import React from 'react';"];
