@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img {
+        display: block;
+        height: 256px;
+        width: 256px;
+      }
+    </style>
+  </head>
+  <body>
+    <img />
+    <script>
+      let icon = location.hash.replace("#", "");
+      const img = document.querySelector("img");
+
+      addEventListener(
+        "hashchange",
+        () => (icon = location.hash.replace("#", ""))
+      );
+
+      setTimeout(
+        () =>
+          setInterval(
+            () => (img.src = `./svg/${icon}.svg?${+new Date()}`),
+            250
+          ),
+        1000 - new Date().getMilliseconds()
+      );
+    </script>
+  </body>
+</html>
