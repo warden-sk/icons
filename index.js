@@ -1,3 +1,7 @@
+/*
+ * Copyright 2021 Marek Kobida
+ */
+
 const fs = require('fs');
 
 const { icons } = require('./createIcon');
@@ -15,7 +19,7 @@ function react(name, svg) {
   return `export const ${name} = ({ size = 24, ...$ }: JSX.IntrinsicElements['svg'] | { size?: number }) => ${svg};`;
 }
 
-const tsx = [];
+const tsx = ["import React from 'react';"];
 
 icons.forEach(([name, svg]) => {
   tsx.push(react(name.charAt(0).toUpperCase() + name.substring(1), svg));

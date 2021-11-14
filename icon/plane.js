@@ -1,3 +1,7 @@
+/*
+ * Copyright 2021 Marek Kobida
+ */
+
 const { createIcon } = require('../createIcon');
 
 createIcon('plane', addPath => {

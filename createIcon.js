@@ -1,3 +1,7 @@
+/*
+ * Copyright 2021 Marek Kobida
+ */
+
 const fs = require('fs');
 const paper = require('paper');
 const svgo = require('svgo');
