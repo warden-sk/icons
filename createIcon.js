@@ -78,7 +78,7 @@ function test(svg) {
       {
         name: 'sortAttrs',
         params: {
-          order: ['d', 'fill', 'height', 'width'],
+          order: ['d', 'fill', 'height', 'viewBox', 'width'],
           xmlnsOrder: 'alphabetical',
         },
       },
