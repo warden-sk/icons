@@ -25,7 +25,7 @@ icons.forEach(([name, svg]) => {
   tsx.push(react(name.charAt(0).toUpperCase() + name.substring(1), svg));
 });
 
-console.log(tsx.join('\n\n'));
+fs.writeFileSync('./icons.tsx', tsx.join('\n'));
 
 try {
   fs.writeFileSync('../koala.sk/icons.tsx', tsx.join('\n'));
