@@ -13,5 +13,10 @@
     "prettier": "^2.4.1",
     "react": "^17.0.2",
     "typescript": "^4.4.4"
+  },
+  "name": "@warden-sk/icons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warden-sk/icons.git"
   }
 }
