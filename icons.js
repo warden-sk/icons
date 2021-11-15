@@ -3,10 +3,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Sun = exports.Plus = exports.Plane = exports.ChevronRight = void 0;
+exports.Sun = exports.Plus = exports.Plane = exports.ChevronRight = exports.ChevronLeft = void 0;
 const react_1 = __importDefault(require("react"));
+const ChevronLeft = ({ className, size = 24, ...$ }) => react_1.default.createElement("svg", { ...$, className: className ? `icon ${className}` : 'icon', height: size, viewBox: "0 0 24 24", width: size, xmlns: "http://www.w3.org/2000/svg" },
+    react_1.default.createElement("path", { d: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59", fill: "currentColor" }));
+exports.ChevronLeft = ChevronLeft;
 const ChevronRight = ({ className, size = 24, ...$ }) => react_1.default.createElement("svg", { ...$, className: className ? `icon ${className}` : 'icon', height: size, viewBox: "0 0 24 24", width: size, xmlns: "http://www.w3.org/2000/svg" },
-    react_1.default.createElement("path", { d: "M10 6 8.59 7.41l4.58 4.58-4.58 4.58L10 17.98l6-6-6-6", fill: "currentColor" }));
+    react_1.default.createElement("path", { d: "M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6", fill: "currentColor" }));
 exports.ChevronRight = ChevronRight;
 const Plane = ({ className, size = 24, ...$ }) => react_1.default.createElement("svg", { ...$, className: className ? `icon ${className}` : 'icon', height: size, viewBox: "0 0 24 24", width: size, xmlns: "http://www.w3.org/2000/svg" },
     react_1.default.createElement("path", { d: "M13 9V3.5a1.5 1.5 0 1 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5v-2l-8-5", fill: "currentColor" }));
