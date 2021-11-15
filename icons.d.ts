@@ -1,4 +1,7 @@
 import React from 'react';
+export declare const ArrowRightAlt: ({ className, size, ...$ }: React.SVGProps<SVGSVGElement> & {
+    size?: number | undefined;
+}) => JSX.Element;
 export declare const ChevronLeft: ({ className, size, ...$ }: React.SVGProps<SVGSVGElement> & {
     size?: number | undefined;
 }) => JSX.Element;

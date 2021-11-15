@@ -3,8 +3,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Sun = exports.Plus = exports.Plane = exports.ChevronRight = exports.ChevronLeft = void 0;
+exports.Sun = exports.Plus = exports.Plane = exports.ChevronRight = exports.ChevronLeft = exports.ArrowRightAlt = void 0;
 const react_1 = __importDefault(require("react"));
+const ArrowRightAlt = ({ className, size = 24, ...$ }) => react_1.default.createElement("svg", { ...$, className: className ? `icon ${className}` : 'icon', height: size, viewBox: "0 0 24 24", width: size, xmlns: "http://www.w3.org/2000/svg" },
+    react_1.default.createElement("path", { d: "M16.01 11H4v2h12.01v3L20 12l-3.99-4", fill: "currentColor" }));
+exports.ArrowRightAlt = ArrowRightAlt;
 const ChevronLeft = ({ className, size = 24, ...$ }) => react_1.default.createElement("svg", { ...$, className: className ? `icon ${className}` : 'icon', height: size, viewBox: "0 0 24 24", width: size, xmlns: "http://www.w3.org/2000/svg" },
     react_1.default.createElement("path", { d: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59", fill: "currentColor" }));
 exports.ChevronLeft = ChevronLeft;
