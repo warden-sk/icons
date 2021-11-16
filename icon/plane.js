@@ -8,7 +8,8 @@ createIcon('plane', addPath => {
   addPath((path, { p, pR, vR, x, y }) => {
     path.moveTo(p(13, 9));
     path.lineTo(vR(-5.5));
-    path.arcTo(x() - 3, y(), 1.5, 1.5, 1.5);
+    path.cubicCurveTo(pR(0, -0.8284), pR(-0.6716, -1.5), pR(-1.5, -1.5)); // TODO
+    path.cubicCurveTo(pR(-0.8284, 0), pR(-1.5, 0.6716), pR(-1.5, 1.5)); // TODO
     path.lineTo(vR(5.5));
     // ľavé krídlo
     path.lineTo(pR(-8, 5));

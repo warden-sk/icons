@@ -4,6 +4,7 @@
 
 const { createIcon } = require('../createIcon');
 
+// TODO
 createIcon('arrow_right_alt', addPath => {
   addPath((path, { hR, p, pR, vR }) => {
     path.moveTo(p(16.01, 11));

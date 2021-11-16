@@ -4,6 +4,7 @@
 
 const { createIcon } = require('../createIcon');
 
+// TODO
 createIcon('chevron_right', addPath => {
   addPath((path, { p, pR }) => {
     path.moveTo(p(10, 6));
