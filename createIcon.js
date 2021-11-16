@@ -22,25 +22,13 @@ function createIcon(name, on) {
     const y = () => path.lastSegment.point.y;
 
     const h = x => new paper.Point(x, y());
-    const v = y => new paper.Point(x(), y);
-
     const hR = xx => (xx > 0 ? new paper.Point(x() + xx, y()) : new paper.Point(x() - xx * -1, y()));
+    const p = (x, y) => new paper.Point(x, y);
+    const pR = (xx, yy) => new paper.Point(xx > 0 ? x() + xx : x() - xx * -1, yy > 0 ? y() + yy : y() - yy * -1);
+    const v = y => new paper.Point(x(), y);
     const vR = yy => (yy > 0 ? new paper.Point(x(), y() + yy) : new paper.Point(x(), y() - yy * -1));
 
-    const p = (x, y) => new paper.Point(x, y);
-
-    const pR = (xx, yy) => new paper.Point(xx > 0 ? x() + xx : x() - xx * -1, yy > 0 ? y() + yy : y() - yy * -1);
-
-    on(path, {
-      h,
-      hR,
-      p,
-      pR,
-      v,
-      vR,
-      x,
-      y,
-    });
+    on(path, { h, hR, p, pR, v, vR, x, y });
   }
 
   on(addPath);

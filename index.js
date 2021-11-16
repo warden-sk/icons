@@ -3,7 +3,6 @@
  */
 
 const fs = require('fs');
-
 const { icons } = require('./createIcon');
 
 require('./icon/arrow_right_alt');
@@ -16,7 +15,7 @@ require('./icon/sun');
 
 function react(name, svg) {
   svg = svg
-    .replace(/(<svg)/, _1 => `${_1} {...$}`)
+    .replace(/(<svg)/, svg => `${svg} {...$}`)
     .replace(/height="[^"]+"/, `className={className ? \`icon \${className}\` : 'icon'} height={size}`)
     .replace(/width="[^"]+"/, 'width={size}');
 
