@@ -9,7 +9,9 @@ const ArrowRightAlt = ({ className, size = 24, ...$ }) => react_1.default.create
     react_1.default.createElement("path", { d: "M16.01 11H4v2h12.01v3L20 12l-3.99-4", fill: "currentColor" }));
 exports.ArrowRightAlt = ArrowRightAlt;
 const BookmarkAdd = ({ className, size = 24, ...$ }) => react_1.default.createElement("svg", { ...$, className: className ? `icon ${className}` : 'icon', height: size, viewBox: "0 0 24 24", width: size, xmlns: "http://www.w3.org/2000/svg" },
-    react_1.default.createElement("path", { d: "M17 11v6.97l-5-2.14-5 2.14V5h6V3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V11h-2", fill: "currentColor" }));
+    react_1.default.createElement("g", { fill: "currentColor" },
+        react_1.default.createElement("path", { d: "M17 11v6.97l-5-2.14-5 2.14V5h6V3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V11h-2" }),
+        react_1.default.createElement("path", { d: "M21 7h-2v2h-2V7h-2V5h2V3h2v2h2v2" })));
 exports.BookmarkAdd = BookmarkAdd;
 const ChevronLeft = ({ className, size = 24, ...$ }) => react_1.default.createElement("svg", { ...$, className: className ? `icon ${className}` : 'icon', height: size, viewBox: "0 0 24 24", width: size, xmlns: "http://www.w3.org/2000/svg" },
     react_1.default.createElement("path", { d: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59", fill: "currentColor" }));

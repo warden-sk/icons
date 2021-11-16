@@ -4,7 +4,6 @@
 
 const { createIcon } = require('../createIcon');
 
-// TODO
 createIcon('bookmark_add', addPath => {
   addPath((path, { hR, p, pR, vR }) => {
     path.moveTo(p(17, 11));
@@ -21,5 +20,21 @@ createIcon('bookmark_add', addPath => {
     path.lineTo(pR(7, 3));
     path.lineTo(vR(-10));
     path.lineTo(hR(-2));
+  });
+
+  addPath((path, { hR, p, vR }) => {
+    path.moveTo(p(21, 7));
+    path.lineTo(hR(-2));
+    path.lineTo(vR(2));
+    path.lineTo(hR(-2));
+    path.lineTo(vR(-2));
+    path.lineTo(hR(-2));
+    path.lineTo(vR(-2));
+    path.lineTo(hR(2));
+    path.lineTo(vR(-2));
+    path.lineTo(hR(2));
+    path.lineTo(vR(2));
+    path.lineTo(hR(2));
+    path.lineTo(vR(2));
   });
 });
