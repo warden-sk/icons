@@ -31,4 +31,4 @@ icons.forEach(([name, svg]) => {
 });
 
 fs.writeFileSync('./icons.json', JSON.stringify(icons));
-fs.writeFileSync('./icons.tsx', tsx.join(''));
+fs.writeFileSync('./icons.tsx', tsx.join('\n'));
