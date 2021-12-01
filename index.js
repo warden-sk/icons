@@ -6,7 +6,6 @@ const fs = require('fs');
 const { icons } = require('./createIcon');
 
 require('./icon/arrow_right_alt');
-require('./icon/bookmark_add');
 require('./icon/chevron_left');
 require('./icon/chevron_right');
 require('./icon/plane');
