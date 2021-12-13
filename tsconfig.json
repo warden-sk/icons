@@ -5,6 +5,7 @@
     "esModuleInterop": true,
     "jsx": "react",
     "module": "CommonJS",
+    "noEmit": true,
     "strict": true,
     "target": "ESNext"
   }

@@ -29,5 +29,4 @@ icons.forEach(([name, svg]) => {
   tsx.push(react(name, svg));
 });
 
-fs.writeFileSync('./icons.json', JSON.stringify(icons));
 fs.writeFileSync('./icons.tsx', tsx.join('\n'));
