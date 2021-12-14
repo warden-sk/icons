@@ -2,7 +2,7 @@
  * Copyright 2021 Marek Kobida
  */
 
-const { createIcon } = require('../createIcon');
+const { createIcon } = require('../createIcon.beta');
 
 createIcon('arrow_right_alt', addPath => {
   addPath((path, { hR, p, pR, vR }) => {
