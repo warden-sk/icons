@@ -4,6 +4,7 @@
 
 const fs = require('fs');
 const paper = require('paper');
+const svgo = require('svgo');
 
 const icons = [];
 module.exports.icons = icons;
@@ -32,11 +33,45 @@ function createIcon(name, on) {
 
   on(addPath);
 
-  const svg = paper.project.exportSVG({ asString: true });
+  const svg = test(paper.project.exportSVG({ asString: true }));
 
   fs.writeFileSync(`./svg/${name}.svg`, svg);
 
   icons.push([name, svg]);
+}
+
+function test(svg) {
+  svg = svg
+    .replace(/clip-rule="[^"]+"/g, '')
+    .replace(/fill-rule="[^"]+"/g, '')
+    .replace(/fill="[^"]+"/g, 'fill="currentColor"')
+    .replace(/font-family="[^"]+"/g, '')
+    .replace(/font-size="[^"]+"/g, '')
+    .replace(/font-weight="[^"]+"/g, '')
+    .replace(/stroke-miterlimit="[^"]+"/g, '')
+    .replace(/style="[^"]+"/g, '')
+    .replace(/text-anchor="[^"]+"/g, '')
+    .replace(/\s{2,}/g, ' ');
+
+  return svgo.optimize(svg, {
+    plugins: [
+      {
+        name: 'preset-default',
+        params: {
+          overrides: {
+            removeViewBox: false,
+          },
+        },
+      },
+      {
+        name: 'sortAttrs',
+        params: {
+          order: ['d', 'fill', 'height', 'viewBox', 'width'],
+          xmlnsOrder: 'alphabetical',
+        },
+      },
+    ],
+  }).data;
 }
 
 module.exports.createIcon = createIcon;
