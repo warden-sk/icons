@@ -2,7 +2,7 @@
  * Copyright 2021 Marek Kobida
  */
 
-const { createIcon } = require('../createIcon');
+const { createIcon } = require('../createIcon.beta');
 
 createIcon('plus', addPath => {
   addPath((path, { hR, p, vR }) => {

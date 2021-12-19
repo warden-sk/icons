@@ -5,15 +5,9 @@
 const { createIcon } = require('../createIcon');
 
 const END = true;
-const STROKE = false;
-
-const STROKE_COLOR = '#f00';
-const STROKE_WIDTH = 0.5;
 
 createIcon('sun', addPath => {
   addPath((path, { p, x, y }) => {
-    STROKE && (path.strokeColor = STROKE_COLOR);
-    STROKE && (path.strokeWidth = STROKE_WIDTH);
     path.moveTo(p(17, 12));
     path.arcTo(x() - 10, y(), 5, 5, 0);
     path.arcTo(x() + 10, y(), 5, 5, 0);
@@ -21,8 +15,6 @@ createIcon('sun', addPath => {
 
   // up
   addPath((path, { p, vR, x, y }) => {
-    STROKE && (path.strokeColor = STROKE_COLOR);
-    STROKE && (path.strokeWidth = STROKE_WIDTH);
     path.moveTo(p(11, 2));
     path.arcTo(x() + 2, y(), 1, 1, 0, 1);
     path.lineTo(vR(2));
@@ -33,8 +25,6 @@ createIcon('sun', addPath => {
 
   // down
   addPath((path, { p, vR, x, y }) => {
-    STROKE && (path.strokeColor = STROKE_COLOR);
-    STROKE && (path.strokeWidth = STROKE_WIDTH);
     path.moveTo(p(11, 20));
     path.arcTo(x() + 2, y(), 1, 1, 0, 1);
     path.lineTo(vR(2));
@@ -45,8 +35,6 @@ createIcon('sun', addPath => {
 
   // left
   addPath((path, { hR, p, x, y }) => {
-    STROKE && (path.strokeColor = STROKE_COLOR);
-    STROKE && (path.strokeWidth = STROKE_WIDTH);
     path.moveTo(p(2, 11));
     path.arcTo(x(), y() + 2, 1, 1, 1);
     path.lineTo(hR(2));
@@ -57,8 +45,6 @@ createIcon('sun', addPath => {
 
   // right
   addPath((path, { hR, p, x, y }) => {
-    STROKE && (path.strokeColor = STROKE_COLOR);
-    STROKE && (path.strokeWidth = STROKE_WIDTH);
     path.moveTo(p(20, 11));
     path.arcTo(x(), y() + 2, 1, 1, 1);
     path.lineTo(hR(2));
@@ -72,8 +58,6 @@ createIcon('sun', addPath => {
 
   // up left
   addPath((path, { p, pR, x, y }) => {
-    STROKE && (path.strokeColor = STROKE_COLOR);
-    STROKE && (path.strokeWidth = STROKE_WIDTH);
     path.moveTo(p(4.575 + A, 4.575));
     path.arcTo(x() - A, y() + A, 1, 1, 1);
     path.lineTo(pR(B, B));
@@ -84,8 +68,6 @@ createIcon('sun', addPath => {
 
   // up right
   addPath((path, { p, pR, x, y }) => {
-    STROKE && (path.strokeColor = STROKE_COLOR);
-    STROKE && (path.strokeWidth = STROKE_WIDTH);
     path.moveTo(p(18.0108, 4.575));
     path.arcTo(x() + A, y() + A, 1, 1, 0, 1);
     path.lineTo(pR(-B, B));
@@ -96,8 +78,6 @@ createIcon('sun', addPath => {
 
   // down left
   addPath((path, { p, pR, x, y }) => {
-    STROKE && (path.strokeColor = STROKE_COLOR);
-    STROKE && (path.strokeWidth = STROKE_WIDTH);
     path.moveTo(p(5.636, 16.9497));
     path.arcTo(x() + A, y() + A, 1, 1, 0, 1);
     path.lineTo(pR(-B, B));
@@ -108,8 +88,6 @@ createIcon('sun', addPath => {
 
   // down right
   addPath((path, { p, pR, x, y }) => {
-    STROKE && (path.strokeColor = STROKE_COLOR);
-    STROKE && (path.strokeWidth = STROKE_WIDTH);
     path.moveTo(p(16.9497 + A, 16.9497));
     path.arcTo(x() - A, y() + A, 1, 1, 1);
     path.lineTo(pR(B, B));

@@ -24,8 +24,8 @@ function createIcon(name, on) {
       }
     }
 
-    const x = () => d[d.length - 1][1].x;
-    const y = () => d[d.length - 1][1].y;
+    const x = () => d[d.length - 1][d[d.length - 1].length - 1].x;
+    const y = () => d[d.length - 1][d[d.length - 1].length - 1].y;
 
     const h = x => new Point(x, y());
     const hR = xx => (xx > 0 ? new Point(x() + xx, y()) : new Point(x() - xx * -1, y()));
@@ -36,12 +36,13 @@ function createIcon(name, on) {
     const v = y => new Point(x(), y);
     const vR = yy => (yy > 0 ? new Point(x(), y() + yy) : new Point(x(), y() - yy * -1));
 
+    const cubicCurveTo = (a, b, c) => d.push(['C', a, b, c]);
     const lineTo = point => d.push(['L', point]);
     const moveTo = point => d.push(['M', point]);
 
-    on({ lineTo, moveTo }, { h, hR, p, pR, v, vR, x, y });
+    on({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR, x, y });
 
-    svg.push(`<path d="${d.map($ => `${$[0]} ${$[1]}`).join(' ')}" fill="${fill}" />`);
+    svg.push(`<path d="${d.map(([a, ...b]) => `${a} ${b.join()}`).join(' ')}" fill="${fill}" />`);
   }
 
   on(addPath);
