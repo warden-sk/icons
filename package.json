@@ -4,12 +4,12 @@
     "svgo": "^2.8.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.37",
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
+    "@types/react": "^17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
     "@warden-sk/eslint-config": "github:warden-sk/eslint-config",
     "@warden-sk/warden": "github:warden-sk/warden",
-    "eslint": "^8.5.0",
+    "eslint": "^8.6.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
