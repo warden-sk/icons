@@ -18,7 +18,7 @@ function react(name, svg) {
     .replace(/height="[^"]+"/, `className={className ? \`icon \${className}\` : 'icon'} height={size}`)
     .replace(/width="[^"]+"/, 'width={size}');
 
-  return `export const ${name} = ({ className, size = 24, ...$ }: JSX.IntrinsicElements['svg'] & { size?: number }) => ${svg};`;
+  return `export const ${name} = ({ className, size = 24, ...$ }: B<JSX.IntrinsicElements['svg']> & { size?: number }) => ${svg};`;
 }
 
 const tsx = ["import React from 'react';"];
