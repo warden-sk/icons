@@ -3,8 +3,7 @@
  */
 
 const fs = require('fs');
-const { icons: icons1 } = require('./createIcon.beta');
-const { icons: icons2 } = require('./createIcon');
+const { icons } = require('./createIcon.beta');
 
 require('./icon/arrow_right_alt');
 require('./icon/chevron_left');
@@ -24,13 +23,7 @@ function react(name, svg) {
 
 const tsx = ["import React from 'react';"];
 
-icons1.forEach(([name, svg]) => {
-  name = name.replace(/^(.)/, (_1, _2) => _2.toUpperCase()).replace(/_(.)/g, (_1, _2) => _2.toUpperCase());
-
-  tsx.push(react(name, svg));
-});
-
-icons2.forEach(([name, svg]) => {
+icons.forEach(([name, svg]) => {
   name = name.replace(/^(.)/, (_1, _2) => _2.toUpperCase()).replace(/_(.)/g, (_1, _2) => _2.toUpperCase());
 
   tsx.push(react(name, svg));

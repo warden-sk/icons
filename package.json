@@ -1,8 +1,4 @@
 {
-  "dependencies": {
-    "paper-jsdom": "^0.12.15",
-    "svgo": "^2.8.0"
-  },
   "devDependencies": {
     "@types/react": "^17.0.39",
     "@typescript-eslint/eslint-plugin": "^5.13.0",

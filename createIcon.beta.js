@@ -36,13 +36,13 @@ function createIcon(name, on) {
     const v = y => new Point(x(), y);
     const vR = yy => (yy > 0 ? new Point(x(), y() + yy) : new Point(x(), y() - yy * -1));
 
-    const cubicCurveTo = (a, b, c) => d.push(['C', a, b, c]);
+    const cubicCurveTo = (point1, point2, point3) => d.push(['C', point1, point2, point3]);
     const lineTo = point => d.push(['L', point]);
     const moveTo = point => d.push(['M', point]);
 
     on({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR, x, y });
 
-    svg.push(`<path d="${d.map(([a, ...b]) => `${a} ${b.join()}`).join(' ')}" fill="${fill}" />`);
+    svg.push(`<path d="${d.map(([a, ...b]) => `${a} ${b.join(' ')}`).join(' ')}" fill="${fill}" />`);
   }
 
   on(addPath);
