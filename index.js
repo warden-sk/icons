@@ -3,7 +3,7 @@
  */
 
 const fs = require('fs');
-const { icons } = require('./createIcon.beta');
+const { icons } = require('./createIcon');
 
 require('./icon/arrow_right_alt');
 require('./icon/chevron_left');
