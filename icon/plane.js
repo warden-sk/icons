@@ -5,7 +5,7 @@
 const { createIcon } = require('../createIcon');
 
 createIcon('plane', addPath => {
-  addPath((path, { p, pR, vR, x, y }) => {
+  addPath((path, { p, pR, vR }) => {
     path.moveTo(p(13, 9));
     path.lineTo(vR(-5.5));
     path.cubicCurveTo(pR(0, -0.8284), pR(-0.6716, -1.5), pR(-1.5, -1.5));

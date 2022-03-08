@@ -2,6 +2,7 @@
  * Copyright 2022 Marek Kobida
  */
 
+const Point = require('./Point');
 const fs = require('fs');
 
 const icons = [];
@@ -11,38 +12,35 @@ function createIcon(name, on) {
 
   function addPath(on) {
     const d = [];
-    const fill = 'currentColor';
 
-    class Point {
-      constructor(x, y) {
-        this.x = x;
-        this.y = y;
-      }
+    /**
+     * (1)
+     */
+    const lastX = () => d[d.length - 1][d[d.length - 1].length - 1].x;
+    const lastY = () => d[d.length - 1][d[d.length - 1].length - 1].y;
 
-      toString() {
-        return `${this.x} ${this.y}`;
-      }
-    }
-
-    const x = () => d[d.length - 1][d[d.length - 1].length - 1].x;
-    const y = () => d[d.length - 1][d[d.length - 1].length - 1].y;
-
-    const h = x => new Point(x, y());
-    const hR = xx => (xx > 0 ? new Point(x() + xx, y()) : new Point(x() - xx * -1, y()));
+    /**
+     * (2)
+     */
+    const h = x => new Point(x, lastY());
+    const hR = x => (x > 0 ? new Point(lastX() + x, lastY()) : new Point(lastX() - x * -1, lastY()));
 
     const p = (x, y) => new Point(x, y);
-    const pR = (xx, yy) => new Point(xx > 0 ? x() + xx : x() - xx * -1, yy > 0 ? y() + yy : y() - yy * -1);
+    const pR = (x, y) => new Point(x > 0 ? lastX() + x : lastX() - x * -1, y > 0 ? lastY() + y : lastY() - y * -1);
 
-    const v = y => new Point(x(), y);
-    const vR = yy => (yy > 0 ? new Point(x(), y() + yy) : new Point(x(), y() - yy * -1));
+    const v = y => new Point(lastX(), y);
+    const vR = y => (y > 0 ? new Point(lastX(), lastY() + y) : new Point(lastX(), lastY() - y * -1));
 
+    /**
+     * (3) Path functions
+     */
     const cubicCurveTo = (point1, point2, point3) => d.push(['C', point1, point2, point3]);
     const lineTo = point => d.push(['L', point]);
     const moveTo = point => d.push(['M', point]);
 
-    on({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR, x, y });
+    on({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR, x: lastX, y: lastY });
 
-    svg.push(`<path d="${d.map(([a, ...b]) => `${a} ${b.join(' ')}`).join(' ')}" fill="${fill}" />`);
+    svg.push(`<path d="${d.map(([a, ...b]) => `${a} ${b.join(' ')}`).join(' ')}" fill="currentColor" />`);
   }
 
   on(addPath);
