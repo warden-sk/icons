@@ -2,17 +2,17 @@
  * Copyright 2022 Marek Kobida
  */
 
-const fs = require('fs');
-const { icons } = require('./createIcon');
+import './icon/arrow_right_alt';
+import './icon/chevron_left';
+import './icon/chevron_right';
+import './icon/plane';
+import './icon/plus';
+import './icon/sun';
 
-require('./icon/arrow_right_alt');
-require('./icon/chevron_left');
-require('./icon/chevron_right');
-require('./icon/plane');
-require('./icon/plus');
-require('./icon/sun');
+import fs from 'fs';
+import { icons } from './createIcon';
 
-function react(name, svg) {
+function react(name: string, svg: string): string {
   svg = svg
     .replace(/(<svg)/, svg => `${svg} {...$}`)
     .replace(/height="[^"]+"/, `className={className ? \`icon \${className}\` : 'icon'} height={size}`)

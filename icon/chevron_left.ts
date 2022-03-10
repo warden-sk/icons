@@ -2,7 +2,7 @@
  * Copyright 2022 Marek Kobida
  */
 
-const { createIcon } = require('../createIcon');
+import createIcon from '../createIcon';
 
 createIcon('chevron_left', addPath => {
   addPath((path, { p, pR }) => {

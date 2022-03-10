@@ -2,7 +2,7 @@
  * Copyright 2022 Marek Kobida
  */
 
-const { createIcon } = require('../createIcon');
+import createIcon from '../createIcon';
 
 createIcon('plane', addPath => {
   addPath((path, { p, pR, vR }) => {
