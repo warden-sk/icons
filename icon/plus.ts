@@ -4,7 +4,7 @@
 
 import createIcon from '../createIcon';
 
-createIcon('plus', addPath => {
+createIcon('Plus', addPath => {
   addPath((path, { hR, p, vR }) => {
     path.moveTo(p(13, 5));
     path.lineTo(hR(-2));

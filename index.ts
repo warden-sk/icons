@@ -21,11 +21,9 @@ function react(name: string, svg: string): string {
   return `export const ${name} = ({ className, size = 24, ...$ }: B<JSX.IntrinsicElements['svg']> & { size?: number }) => ${svg};`;
 }
 
-const tsx = ["import React from 'react';"];
+const tsx: string[] = ["import React from 'react';"];
 
 icons.forEach(([name, svg]) => {
-  name = name.replace(/^(.)/, (_1, _2) => _2.toUpperCase()).replace(/_(.)/g, (_1, _2) => _2.toUpperCase());
-
   tsx.push(react(name, svg));
 });
 

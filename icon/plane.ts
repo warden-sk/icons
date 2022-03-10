@@ -4,7 +4,7 @@
 
 import createIcon from '../createIcon';
 
-createIcon('plane', addPath => {
+createIcon('Plane', addPath => {
   addPath((path, { p, pR, vR }) => {
     path.moveTo(p(13, 9));
     path.lineTo(vR(-5.5));

@@ -4,7 +4,7 @@
 
 import createIcon from '../createIcon';
 
-createIcon('chevron_right', addPath => {
+createIcon('ChevronRight', addPath => {
   addPath((path, { p, pR }) => {
     path.moveTo(p(10, 6));
     path.lineTo(pR(-1.41, 1.41));

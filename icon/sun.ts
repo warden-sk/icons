@@ -4,7 +4,7 @@
 
 import createIcon from '../createIcon';
 
-createIcon('sun', addPath => {
+createIcon('Sun', addPath => {
   addPath((path, { hR, p, pR, vR }) => {
     path.moveTo(p(12, 7));
     path.cubicCurveTo(hR(-2.76), pR(-5, 2.24), pR(-5, 5));
