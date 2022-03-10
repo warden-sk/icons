@@ -4,99 +4,96 @@
 
 const { createIcon } = require('../createIcon');
 
-const END = true;
-
 createIcon('sun', addPath => {
-  addPath((path, { p, pR }) => {
-    path.moveTo(p(17, 12));
-    path.cubicCurveTo(pR(0, -2.7614), pR(-2.2386, -5), pR(-5, -5));
-    path.cubicCurveTo(pR(-2.7614, 0), pR(-5, 2.2386), pR(-5, 5));
-    path.cubicCurveTo(pR(0, 2.7614), pR(2.2386, 5), pR(5, 5));
-    path.cubicCurveTo(pR(2.7614, 0), pR(5, -2.2386), pR(5, -5));
+  addPath((path, { hR, p, pR, vR }) => {
+    path.moveTo(p(12, 7));
+    path.cubicCurveTo(hR(-2.76), pR(-5, 2.24), pR(-5, 5));
+    path.cubicCurveTo(vR(2.76), pR(2.24, 5), pR(5, 5));
+    path.cubicCurveTo(hR(2.76), pR(5, -2.24), pR(5, -5));
+    path.cubicCurveTo(vR(-2.76), pR(-2.24, -5), pR(-5, -5));
   });
 
-  if (false) {
-    // up
-    addPath((path, { p, vR, x, y }) => {
-      path.moveTo(p(11, 2));
-      path.arcTo(x() + 2, y(), 1, 1, 0, 1);
-      path.lineTo(vR(2));
-      path.arcTo(x() - 2, y(), 1, 1, 0, 1);
+  // down
+  addPath((path, { hR, p, pR, vR }) => {
+    path.moveTo(p(11, 20));
+    path.lineTo(vR(2));
+    path.cubicCurveTo(vR(0.55), pR(0.45, 1), pR(1, 1));
+    path.cubicCurveTo(hR(0.55), pR(1, -0.45), pR(1, -1));
+    path.lineTo(vR(-2));
+    path.cubicCurveTo(vR(-0.55), pR(-0.45, -1), pR(-1, -1));
+    path.cubicCurveTo(hR(-0.55), pR(-1, 0.45), pR(-1, 1));
+  });
 
-      END && path.lineTo(p(11, 2));
-    });
+  // down left
+  addPath((path, { hR, p, pR, vR }) => {
+    path.moveTo(p(7.05, 18.36));
+    path.cubicCurveTo(pR(0.39, -0.39), pR(0.39, -1.03), vR(-1.41));
+    path.cubicCurveTo(pR(-0.39, -0.39), pR(-1.03, -0.39), hR(-1.41));
+    path.lineTo(pR(-1.06, 1.06));
+    path.cubicCurveTo(pR(-0.39, 0.39), pR(-0.39, 1.03), vR(1.41));
+    path.cubicCurveTo(pR(0.39, 0.39), pR(1.03, 0.39), hR(1.41));
+  });
 
-    // down
-    addPath((path, { p, vR, x, y }) => {
-      path.moveTo(p(11, 20));
-      path.arcTo(x() + 2, y(), 1, 1, 0, 1);
-      path.lineTo(vR(2));
-      path.arcTo(x() - 2, y(), 1, 1, 0, 1);
+  // down right
+  addPath((path, { hR, p, pR, vR }) => {
+    path.moveTo(p(18.36, 16.95));
+    path.cubicCurveTo(pR(-0.39, -0.39), pR(-1.03, -0.39), hR(-1.41));
+    path.cubicCurveTo(pR(-0.39, 0.39), pR(-0.39, 1.03), vR(1.41));
+    path.lineTo(pR(1.06, 1.06));
+    path.cubicCurveTo(pR(0.39, 0.39), pR(1.03, 0.39), hR(1.41));
+    path.cubicCurveTo(pR(0.39, -0.39), pR(0.39, -1.03), vR(-1.41));
+  });
 
-      END && path.lineTo(p(11, 20));
-    });
+  // left
+  addPath((path, { hR, p, pR, vR }) => {
+    path.moveTo(p(2, 13));
+    path.lineTo(hR(2));
+    path.cubicCurveTo(hR(0.55), pR(1, -0.45), pR(1, -1));
+    path.cubicCurveTo(vR(-0.55), pR(-0.45, -1), pR(-1, -1));
+    path.lineTo(hR(-2));
+    path.cubicCurveTo(hR(-0.55), pR(-1, 0.45), pR(-1, 1));
+    path.cubicCurveTo(vR(0.55), pR(0.45, 1), pR(1, 1));
+  });
 
-    // left
-    addPath((path, { hR, p, x, y }) => {
-      path.moveTo(p(2, 11));
-      path.arcTo(x(), y() + 2, 1, 1, 1);
-      path.lineTo(hR(2));
-      path.arcTo(x(), y() - 2, 1, 1, 1);
+  // right
+  addPath((path, { hR, p, pR, vR }) => {
+    path.moveTo(p(20, 13));
+    path.lineTo(hR(2));
+    path.cubicCurveTo(hR(0.55), pR(1, -0.45), pR(1, -1));
+    path.cubicCurveTo(vR(-0.55), pR(-0.45, -1), pR(-1, -1));
+    path.lineTo(hR(-2));
+    path.cubicCurveTo(hR(-0.55), pR(-1, 0.45), pR(-1, 1));
+    path.cubicCurveTo(vR(0.55), pR(0.45, 1), pR(1, 1));
+  });
 
-      END && path.lineTo(p(2, 11));
-    });
+  // up
+  addPath((path, { hR, p, pR, vR }) => {
+    path.moveTo(p(11, 2));
+    path.lineTo(vR(2));
+    path.cubicCurveTo(vR(0.55), pR(0.45, 1), pR(1, 1));
+    path.cubicCurveTo(hR(0.55), pR(1, -0.45), pR(1, -1));
+    path.lineTo(vR(-2));
+    path.cubicCurveTo(vR(-0.55), pR(-0.45, -1), pR(-1, -1));
+    path.cubicCurveTo(hR(-0.55), pR(-1, 0.45), pR(-1, 1));
+  });
 
-    // right
-    addPath((path, { hR, p, x, y }) => {
-      path.moveTo(p(20, 11));
-      path.arcTo(x(), y() + 2, 1, 1, 1);
-      path.lineTo(hR(2));
-      path.arcTo(x(), y() - 2, 1, 1, 1);
+  // up left
+  addPath((path, { hR, p, pR, vR }) => {
+    path.moveTo(p(5.99, 4.58));
+    path.cubicCurveTo(pR(-0.39, -0.39), pR(-1.03, -0.39), hR(-1.41));
+    path.cubicCurveTo(pR(-0.39, 0.39), pR(-0.39, 1.03), vR(1.41));
+    path.lineTo(pR(1.06, 1.06));
+    path.cubicCurveTo(pR(0.39, 0.39), pR(1.03, 0.39), hR(1.41));
+    path.cubicCurveTo(pR(0.39, -0.39), pR(0.39, -1.03), vR(-1.41));
+  });
 
-      END && path.lineTo(p(20, 11));
-    });
-
-    const A = 1.415;
-    const B = 1.06;
-
-    // up left
-    addPath((path, { p, pR, x, y }) => {
-      path.moveTo(p(4.575 + A, 4.575));
-      path.arcTo(x() - A, y() + A, 1, 1, 1);
-      path.lineTo(pR(B, B));
-      path.arcTo(x() + A, y() - A, 1, 1, 1);
-
-      END && path.lineTo(p(4.575 + A, 4.575));
-    });
-
-    // up right
-    addPath((path, { p, pR, x, y }) => {
-      path.moveTo(p(18.0108, 4.575));
-      path.arcTo(x() + A, y() + A, 1, 1, 0, 1);
-      path.lineTo(pR(-B, B));
-      path.arcTo(x() - A, y() - A, 1, 1, 0, 1);
-
-      END && path.lineTo(p(18.0108, 4.575));
-    });
-
-    // down left
-    addPath((path, { p, pR, x, y }) => {
-      path.moveTo(p(5.636, 16.9497));
-      path.arcTo(x() + A, y() + A, 1, 1, 0, 1);
-      path.lineTo(pR(-B, B));
-      path.arcTo(x() - A, y() - A, 1, 1, 0, 1);
-
-      END && path.lineTo(p(5.636, 16.9497));
-    });
-
-    // down right
-    addPath((path, { p, pR, x, y }) => {
-      path.moveTo(p(16.9497 + A, 16.9497));
-      path.arcTo(x() - A, y() + A, 1, 1, 1);
-      path.lineTo(pR(B, B));
-      path.arcTo(x() + A, y() - A, 1, 1, 1);
-
-      END && path.lineTo(p(16.9497 + A, 16.9497));
-    });
-  }
+  // up right
+  addPath((path, { hR, p, pR, vR }) => {
+    path.moveTo(p(19.42, 5.99));
+    path.cubicCurveTo(pR(0.39, -0.39), pR(0.39, -1.03), vR(-1.41));
+    path.cubicCurveTo(pR(-0.39, -0.39), pR(-1.03, -0.39), hR(-1.41));
+    path.lineTo(pR(-1.06, 1.06));
+    path.cubicCurveTo(pR(-0.39, 0.39), pR(-0.39, 1.03), vR(1.41));
+    path.cubicCurveTo(pR(0.39, 0.39), pR(1.03, 0.39), hR(1.41));
+  });
 });

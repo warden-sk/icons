@@ -32,15 +32,17 @@ function createIcon(name, on) {
     const vR = y => (y > 0 ? new Point(lastX(), lastY() + y) : new Point(lastX(), lastY() - y * -1));
 
     /**
-     * (3) Path functions
+     * (3)
      */
     const cubicCurveTo = (point1, point2, point3) => d.push(['C', point1, point2, point3]);
     const lineTo = point => d.push(['L', point]);
     const moveTo = point => d.push(['M', point]);
 
-    on({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR, x: lastX, y: lastY });
+    on({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR });
 
-    svg.push(`<path d="${d.map(([a, ...b]) => `${a} ${b.join(' ')}`).join(' ')}" fill="currentColor" />`);
+    svg.push(
+      `<path d="${d.map(([command, ...points]) => `${command} ${points.join(' ')}`).join(' ')}" fill="currentColor" />`
+    );
   }
 
   on(addPath);
