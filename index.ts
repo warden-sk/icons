@@ -2,12 +2,12 @@
  * Copyright 2022 Marek Kobida
  */
 
-import './icon/arrow_right_alt';
-import './icon/chevron_left';
-import './icon/chevron_right';
-import './icon/plane';
-import './icon/plus';
-import './icon/sun';
+import './icon/ArrowRightAlt';
+import './icon/ChevronLeft';
+import './icon/ChevronRight';
+import './icon/Plane';
+import './icon/Plus';
+import './icon/Sun';
 
 import fs from 'fs';
 import { icons } from './createIcon';
