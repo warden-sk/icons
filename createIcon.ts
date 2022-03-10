@@ -7,6 +7,12 @@ import fs from 'fs';
 
 const icons: [name: string, svg: string][] = [];
 
+interface PathCommands {
+  cubicCurveTo: (point1: Point, point2: Point, point3: Point) => number;
+  lineTo: (point: Point) => number;
+  moveTo: (point: Point) => number;
+}
+
 interface Helpers {
   h: (x: number) => Point;
   hR: (x: number) => Point;
@@ -14,12 +20,6 @@ interface Helpers {
   pR: (x: number, y: number) => Point;
   v: (x: number) => Point;
   vR: (x: number) => Point;
-}
-
-interface PathCommands {
-  cubicCurveTo: (point1: Point, point2: Point, point3: Point) => number;
-  lineTo: (point: Point) => number;
-  moveTo: (point: Point) => number;
 }
 
 interface On {
@@ -41,23 +41,22 @@ function createIcon(name: string, on: (on: (on: On) => void) => void) {
     /**
      * (2)
      */
-    const helpers: Helpers = {
-      h: (x: number) => new Point(x, lastY()),
-      hR: (x: number) => (x > 0 ? new Point(lastX() + x, lastY()) : new Point(lastX() - x * -1, lastY())),
-      p: (x: number, y: number) => new Point(x, y),
-      pR: (x: number, y: number) =>
-        new Point(x > 0 ? lastX() + x : lastX() - x * -1, y > 0 ? lastY() + y : lastY() - y * -1),
-      v: (y: number) => new Point(lastX(), y),
-      vR: (y: number) => (y > 0 ? new Point(lastX(), lastY() + y) : new Point(lastX(), lastY() - y * -1)),
+    const pathCommands: PathCommands = {
+      cubicCurveTo: (point1, point2, point3) => d.push(['C', point1, point2, point3]),
+      lineTo: point => d.push(['L', point]),
+      moveTo: point => d.push(['M', point]),
     };
 
     /**
      * (3)
      */
-    const pathCommands: PathCommands = {
-      cubicCurveTo: (point1, point2, point3) => d.push(['C', point1, point2, point3]),
-      lineTo: point => d.push(['L', point]),
-      moveTo: point => d.push(['M', point]),
+    const helpers: Helpers = {
+      h: x => new Point(x, lastY()),
+      hR: x => (x > 0 ? new Point(lastX() + x, lastY()) : new Point(lastX() - x * -1, lastY())),
+      p: (x, y) => new Point(x, y),
+      pR: (x, y) => new Point(x > 0 ? lastX() + x : lastX() - x * -1, y > 0 ? lastY() + y : lastY() - y * -1),
+      v: y => new Point(lastX(), y),
+      vR: y => (y > 0 ? new Point(lastX(), lastY() + y) : new Point(lastX(), lastY() - y * -1)),
     };
 
     on(pathCommands, helpers);
