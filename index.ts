@@ -23,8 +23,6 @@ function react(name: string, svg: string): string {
 
 const tsx: string[] = ["import React from 'react';"];
 
-icons.forEach(([name, svg]) => {
-  tsx.push(react(name, svg));
-});
+icons.forEach(([name, svg]) => tsx.push(react(name, svg)));
 
 fs.writeFileSync('./icons.tsx', tsx.join('\n'));
