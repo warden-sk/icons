@@ -6,19 +6,19 @@ import createIcon from '../createIcon';
 
 // ✅
 createIcon('Plus', addPath => {
-  addPath((path, { hR, p, vR }) => {
-    path.moveTo(p(19, 13));
-    path.lineTo(hR(-6));
-    path.lineTo(vR(6));
-    path.lineTo(hR(-2));
-    path.lineTo(vR(-6));
-    path.lineTo(hR(-6));
-    path.lineTo(vR(-2));
-    path.lineTo(hR(6));
-    path.lineTo(vR(-6));
-    path.lineTo(hR(2));
-    path.lineTo(vR(6));
-    path.lineTo(hR(6));
-    path.lineTo(vR(2));
+  addPath(({ lineTo, moveTo }, { hR, p, vR }) => {
+    moveTo(p(19, 13));
+    lineTo(hR(-6));
+    lineTo(vR(6));
+    lineTo(hR(-2));
+    lineTo(vR(-6));
+    lineTo(hR(-6));
+    lineTo(vR(-2));
+    lineTo(hR(6));
+    lineTo(vR(-6));
+    lineTo(hR(2));
+    lineTo(vR(6));
+    lineTo(hR(6));
+    lineTo(vR(2));
   });
 });
