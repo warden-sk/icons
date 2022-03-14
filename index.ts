@@ -10,22 +10,18 @@ import fs from 'fs/promises';
 
   for await (const file of files) import(`./icons/${file}`);
 
+  const md: string[] = ['# Icons', ...IconStorage.map(({ name }) => `![${name}](./svg/${name}.svg)`)];
+
+  fs.writeFile('./README.md', md.join('\n'));
+
   function iconToReact({ name, svg }: typeof IconStorage.icons[number]): string {
     svg = svg
       .replace(/(<svg)/, svg => `${svg} {...$}`)
       .replace(/height="[^"]+"/, `className={className ? \`icon \${className}\` : 'icon'} height={size}`)
       .replace(/width="[^"]+"/, 'width={size}');
 
-    const tsx = `export const ${name} = ({ className, size = 24, ...$ }: B<JSX.IntrinsicElements['svg']> & { size?: number }) => ${svg};`;
-
-    console.log('iconToReact', { name, svg: svg.length, tsx: tsx.length });
-
-    return tsx;
+    return `export const ${name} = ({ className, size = 24, ...$ }: B<JSX.IntrinsicElements['svg']> & { size?: number }) => ${svg};`;
   }
-
-  const md: string[] = ['# Icons', ...IconStorage.map(({ name }) => `![${name}](./svg/${name}.svg)`)];
-
-  fs.writeFile('./README.md', md.join('\n'));
 
   const tsx: string[] = ["import React from 'react';", ...IconStorage.map(iconToReact)];
 

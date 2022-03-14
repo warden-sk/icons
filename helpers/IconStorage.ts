@@ -13,7 +13,7 @@ class IconStorage {
   static add(name: string, svg: string) {
     this.icons.push({ name, svg });
 
-    console.log('IconStorage.add', { name, svg: svg.length });
+    console.log('IconStorage.add', name, svg.length);
   }
 
   static map<T>(on: (icon: Icon, i: number, icons: Icon[]) => T): T[] {
