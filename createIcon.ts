@@ -2,8 +2,8 @@
  * Copyright 2022 Marek Kobida
  */
 
-import IconStorage from './IconStorage';
-import Point from './Point';
+import IconStorage from './helpers/IconStorage';
+import Point from './helpers/Point';
 import fs from 'fs';
 
 interface PathCommands {

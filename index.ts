@@ -9,7 +9,7 @@ import './icons/Plane';
 import './icons/Plus';
 import './icons/Sun';
 
-import IconStorage from './IconStorage';
+import IconStorage from './helpers/IconStorage';
 import fs from 'fs';
 
 function iconToReact({ name, svg }: typeof IconStorage.icons[number]): string {
