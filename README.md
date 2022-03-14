@@ -1,3 +1,4 @@
+# Icons
 ![ArrowRightAlt](./svg/ArrowRightAlt.svg)
 ![ChevronLeft](./svg/ChevronLeft.svg)
 ![ChevronRight](./svg/ChevronRight.svg)
