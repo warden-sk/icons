@@ -19,5 +19,5 @@ import iconToReact from './iconToReact';
 
   const tsx: string[] = ["import React from 'react';", ...IconStorage.map(iconToReact)];
 
-  fs.writeFile('./icons.tsx', tsx.join('\n'));
+  fs.writeFile('./index.tsx', tsx.join('\n'));
 })();
