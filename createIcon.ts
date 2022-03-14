@@ -2,8 +2,8 @@
  * Copyright 2022 Marek Kobida
  */
 
-import IconStorage from './helpers/IconStorage';
-import Point from './helpers/Point';
+import IconStorage from './IconStorage';
+import Point from './Point';
 
 interface PathCommands {
   cubicCurveTo: (point1: Point, point2: Point, point3?: Point) => number;

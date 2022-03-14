@@ -2,7 +2,7 @@
  * Copyright 2022 Marek Kobida
  */
 
-import IconStorage from './helpers/IconStorage';
+import IconStorage from './IconStorage';
 import fs from 'fs/promises';
 import iconToReact from './iconToReact';
 
