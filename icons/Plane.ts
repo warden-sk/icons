@@ -9,7 +9,7 @@ createIcon('Plane', addPath => {
     moveTo(p(13, 9));
     lineTo(vR(-5.5));
     cubicCurveTo(vR(-0.8284), pR(-0.6716, -1.5), pR(-1.5, -1.5));
-    cubicCurveTo(hR(-0.8284), pR(-1.5, 0.6716), pR(-1.5, 1.5));
+    cubicCurveTo(pR(-1.5, 0.6716), pR(-1.5, 1.5));
     lineTo(vR(5.5));
     // ľavé krídlo
     lineTo(pR(-8, 5));

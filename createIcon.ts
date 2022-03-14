@@ -7,7 +7,7 @@ import Point from './Point';
 import fs from 'fs';
 
 interface PathCommands {
-  cubicCurveTo: (point1: Point, point2: Point, point3: Point) => number;
+  cubicCurveTo: (point1: Point, point2: Point, point3?: Point) => number;
   lineTo: (point: Point) => number;
   moveTo: (point: Point) => number;
 }
@@ -41,7 +41,8 @@ function createIcon(name: string, on: (on: (on: On) => void) => void) {
      * (2)
      */
     const pathCommands: PathCommands = {
-      cubicCurveTo: (point1, point2, point3) => d.push(['C', point1, point2, point3]),
+      cubicCurveTo: (point1, point2, point3) =>
+        point3 ? d.push(['C', point1, point2, point3]) : d.push(['S', point1, point2]),
       lineTo: point => d.push(['L', point]),
       moveTo: point => d.push(['M', point]),
     };
