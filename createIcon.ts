@@ -2,10 +2,9 @@
  * Copyright 2022 Marek Kobida
  */
 
+import IconStorage from './IconStorage';
 import Point from './Point';
 import fs from 'fs';
-
-const icons: [name: string, svg: string][] = [];
 
 interface PathCommands {
   cubicCurveTo: (point1: Point, point2: Point, point3: Point) => number;
@@ -72,9 +71,7 @@ function createIcon(name: string, on: (on: (on: On) => void) => void) {
 
   fs.writeFileSync(`./svg/${name}.svg`, svg.join(''));
 
-  icons.push([name, svg.join('')]);
+  IconStorage.add(name, svg.join(''));
 }
-
-export { icons };
 
 export default createIcon;
