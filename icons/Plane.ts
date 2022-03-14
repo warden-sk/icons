@@ -4,7 +4,6 @@
 
 import createIcon from '../createIcon';
 
-// ✅
 createIcon('Plane', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
     moveTo(p(13, 9));

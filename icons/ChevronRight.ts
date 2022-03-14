@@ -4,7 +4,6 @@
 
 import createIcon from '../createIcon';
 
-// ✅
 createIcon('ChevronRight', addPath => {
   addPath(({ lineTo, moveTo }, { p, pR }) => {
     moveTo(p(10, 6));

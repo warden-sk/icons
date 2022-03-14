@@ -4,7 +4,6 @@
 
 import createIcon from '../createIcon';
 
-// ✅
 createIcon('Plus', addPath => {
   addPath(({ lineTo, moveTo }, { hR, p, vR }) => {
     moveTo(p(19, 13));

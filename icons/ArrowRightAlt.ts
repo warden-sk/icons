@@ -4,7 +4,6 @@
 
 import createIcon from '../createIcon';
 
-// ✅
 createIcon('ArrowRightAlt', addPath => {
   addPath(({ lineTo, moveTo }, { hR, p, pR, vR }) => {
     moveTo(p(16.01, 11));
