@@ -4,7 +4,6 @@
 
 import IconStorage from './helpers/IconStorage';
 import Point from './helpers/Point';
-import fs from 'fs';
 
 interface PathCommands {
   cubicCurveTo: (point1: Point, point2: Point, point3?: Point) => number;
@@ -69,8 +68,6 @@ function createIcon(name: string, on: (on: (on: On) => void) => void) {
   on(addPath);
 
   svg.push('</svg>');
-
-  fs.writeFileSync(`./svg/${name}.svg`, svg.join(''));
 
   IconStorage.add(name, svg.join(''));
 }
