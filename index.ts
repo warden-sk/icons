@@ -25,10 +25,10 @@ function react({ name, svg }: Icon): string {
   return tsx;
 }
 
-const tsx: string[] = ["import React from 'react';", ...IconStorage.map(react)];
-
-fs.writeFileSync('./icons.tsx', tsx.join('\n'));
-
 const md: string[] = IconStorage.map(({ name }) => `![${name}](./svg/${name}.svg)`);
 
 fs.writeFileSync('./README.md', md.join('\n'));
+
+const tsx: string[] = ["import React from 'react';", ...IconStorage.map(react)];
+
+fs.writeFileSync('./icons.tsx', tsx.join('\n'));
