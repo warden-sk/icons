@@ -1,9 +1,7 @@
-# Icons
-
 ```ts
 import { Heart } from '@warden-sk/icons';
 ```
-
+# Icons
 | Name | Icon |
 | --- | :---: |
 | ArrowRightAlt | ![ArrowRightAlt](./svg/ArrowRightAlt.svg) |

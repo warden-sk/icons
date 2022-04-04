@@ -14,12 +14,10 @@ import iconToReact from './iconToReact';
   IconStorage.map(({ name, svg }) => fs.writeFile(`./svg/${name}.svg`, svg));
 
   const md: string[] = [
-    '# Icons',
-    '',
     '```ts',
     "import { Heart } from '@warden-sk/icons';",
     '```',
-    '',
+    '# Icons',
     '| Name | Icon |',
     '| --- | :---: |',
     ...IconStorage.map(({ name }) => `| ${name} | ![${name}](./svg/${name}.svg) |`),
