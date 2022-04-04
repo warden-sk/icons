@@ -9,11 +9,11 @@ function iconToReact({ name, svg }: typeof IconStorage.icons[number]): string {
     .replace(/(<svg)/, svg => `${svg} {...$}`)
     .replace(
       /height="[^"]+"/,
-      `className={className ? \`icon \${className}\` : 'icon'} height={size} style={{ minHeight: size, minWidth: size }}`
+      `className={className ? \`icon \${className}\` : 'icon'} height={size} style={{ minHeight: size, minWidth: size, ...style }}`
     )
     .replace(/width="[^"]+"/, 'width={size}');
 
-  return `export const ${name} = ({ className, size = 24, ...$ }: B<JSX.IntrinsicElements['svg']> & { size?: number }) => ${svg};`;
+  return `export const ${name} = ({ className, size = 24, style, ...$ }: B<JSX.IntrinsicElements['svg']> & { size?: number }) => ${svg};`;
 }
 
 export default iconToReact;
