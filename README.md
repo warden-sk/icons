@@ -6,7 +6,7 @@
 | ChevronLeft | ![ChevronLeft](./svg/ChevronLeft.svg) |
 | ChevronRight | ![ChevronRight](./svg/ChevronRight.svg) |
 | Heart | ![Heart](./svg/Heart.svg) |
-| HeartBorder | ![HeartBorder](./svg/HeartBorder.svg) |
+| HeartO | ![HeartO](./svg/HeartO.svg) |
 | Plane | ![Plane](./svg/Plane.svg) |
 | Plus | ![Plus](./svg/Plus.svg) |
 | Search | ![Search](./svg/Search.svg) |

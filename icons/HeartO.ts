@@ -4,7 +4,7 @@
 
 import createIcon from '../createIcon';
 
-createIcon('HeartBorder', addPath => {
+createIcon('HeartO', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
     moveTo(p(16.5, 3));
     cubicCurveTo(hR(-1.74), pR(-3.41, 0.81), pR(-4.5, 2.09));
