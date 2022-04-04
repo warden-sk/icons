@@ -15,9 +15,14 @@ import iconToReact from './iconToReact';
 
   const md: string[] = [
     '# Icons',
+    '',
     '| Name | Icon |',
     '| --- | :---: |',
     ...IconStorage.map(({ name }) => `| ${name} | ![${name}](./svg/${name}.svg) |`),
+    '',
+    '```ts',
+    "import { Heart } from '@warden-sk/icons';",
+    '```',
   ];
 
   fs.writeFile('./README.md', md.join('\n'));
