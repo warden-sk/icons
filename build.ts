@@ -16,7 +16,7 @@ import iconToReact from './iconToReact';
   const md: string[] = [
     '# Icons',
     '| Name | Icon |',
-    '| --- | --- |',
+    '| --- | :---: |',
     ...IconStorage.map(({ name }) => `| ${name} | ![${name}](./svg/${name}.svg) |`),
   ];
 

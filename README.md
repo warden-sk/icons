@@ -1,6 +1,6 @@
 # Icons
 | Name | Icon |
-| --- | --- |
+| --- | :---: |
 | ArrowRightAlt | ![ArrowRightAlt](./svg/ArrowRightAlt.svg) |
 | Calendar | ![Calendar](./svg/Calendar.svg) |
 | ChevronLeft | ![ChevronLeft](./svg/ChevronLeft.svg) |
