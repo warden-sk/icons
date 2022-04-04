@@ -1,5 +1,9 @@
 # Icons
 
+```ts
+import { Heart } from '@warden-sk/icons';
+```
+
 | Name | Icon |
 | --- | :---: |
 | ArrowRightAlt | ![ArrowRightAlt](./svg/ArrowRightAlt.svg) |
@@ -12,7 +16,3 @@
 | Plus | ![Plus](./svg/Plus.svg) |
 | Search | ![Search](./svg/Search.svg) |
 | Sun | ![Sun](./svg/Sun.svg) |
-
-```ts
-import { Heart } from '@warden-sk/icons';
-```
