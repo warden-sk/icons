@@ -13,7 +13,12 @@ import iconToReact from './iconToReact';
 
   IconStorage.map(({ name, svg }) => fs.writeFile(`./svg/${name}.svg`, svg));
 
-  const md: string[] = ['# Icons', ...IconStorage.map(({ name }) => `![${name}](./svg/${name}.svg)`)];
+  const md: string[] = [
+    '# Icons',
+    '| Name | Icon |',
+    '| --- | --- |',
+    ...IconStorage.map(({ name }) => `| ${name} | ![${name}](./svg/${name}.svg) |`),
+  ];
 
   fs.writeFile('./README.md', md.join('\n'));
 

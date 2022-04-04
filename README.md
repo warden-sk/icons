@@ -1,11 +1,13 @@
 # Icons
-![ArrowRightAlt](./svg/ArrowRightAlt.svg)
-![Calendar](./svg/Calendar.svg)
-![ChevronLeft](./svg/ChevronLeft.svg)
-![ChevronRight](./svg/ChevronRight.svg)
-![Heart](./svg/Heart.svg)
-![HeartBorder](./svg/HeartBorder.svg)
-![Plane](./svg/Plane.svg)
-![Plus](./svg/Plus.svg)
-![Search](./svg/Search.svg)
-![Sun](./svg/Sun.svg)
+| Name | Icon |
+| --- | --- |
+| ArrowRightAlt | ![ArrowRightAlt](./svg/ArrowRightAlt.svg) |
+| Calendar | ![Calendar](./svg/Calendar.svg) |
+| ChevronLeft | ![ChevronLeft](./svg/ChevronLeft.svg) |
+| ChevronRight | ![ChevronRight](./svg/ChevronRight.svg) |
+| Heart | ![Heart](./svg/Heart.svg) |
+| HeartBorder | ![HeartBorder](./svg/HeartBorder.svg) |
+| Plane | ![Plane](./svg/Plane.svg) |
+| Plus | ![Plus](./svg/Plus.svg) |
+| Search | ![Search](./svg/Search.svg) |
+| Sun | ![Sun](./svg/Sun.svg) |
