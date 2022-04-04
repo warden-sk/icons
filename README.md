@@ -7,4 +7,5 @@
 ![HeartBorder](./svg/HeartBorder.svg)
 ![Plane](./svg/Plane.svg)
 ![Plus](./svg/Plus.svg)
+![Search](./svg/Search.svg)
 ![Sun](./svg/Sun.svg)
