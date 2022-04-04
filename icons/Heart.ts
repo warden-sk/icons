@@ -14,5 +14,6 @@ createIcon('Heart', addPath => {
     cubicCurveTo(pR(1.09, -1.28), pR(2.76, -2.09), pR(4.5, -2.09));
     cubicCurveTo(hR(3.08), pR(5.5, 2.42), pR(5.5, 5.5));
     cubicCurveTo(vR(3.78), pR(-3.4, 6.86), pR(-8.55, 11.54));
+    // ?
   });
 });

@@ -7,8 +7,8 @@ class Point {
   y: number;
 
   constructor(x: number, y: number) {
-    this.x = x;
-    this.y = y;
+    this.x = +x.toFixed(2);
+    this.y = +y.toFixed(2);
   }
 
   toString() {
