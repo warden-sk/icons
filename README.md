@@ -1,5 +1,6 @@
 # Icons
 ![ArrowRightAlt](./svg/ArrowRightAlt.svg)
+![Calendar](./svg/Calendar.svg)
 ![ChevronLeft](./svg/ChevronLeft.svg)
 ![ChevronRight](./svg/ChevronRight.svg)
 ![Heart](./svg/Heart.svg)
