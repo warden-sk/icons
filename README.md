@@ -5,6 +5,7 @@ import { Heart } from '@warden-sk/icons';
 | Name | Icon |
 | --- | :---: |
 | ArrowRightAlt | ![ArrowRightAlt](./svg/ArrowRightAlt.svg) |
+| Bus | ![Bus](./svg/Bus.svg) |
 | Calendar | ![Calendar](./svg/Calendar.svg) |
 | ChevronLeft | ![ChevronLeft](./svg/ChevronLeft.svg) |
 | ChevronRight | ![ChevronRight](./svg/ChevronRight.svg) |
