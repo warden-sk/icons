@@ -4,7 +4,7 @@
 
 import createIcon from '../createIcon';
 
-createIcon('Service', addPath => {
+createIcon('HotelService', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { p, pR, vR }) => {
     moveTo(p(8.1, 13.34));
     lineTo(pR(2.83, -2.83));

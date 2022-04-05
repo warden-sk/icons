@@ -11,9 +11,9 @@ import { Heart } from '@warden-sk/icons';
 | ChevronRight | ![ChevronRight](./svg/ChevronRight.svg) |
 | Heart | ![Heart](./svg/Heart.svg) |
 | HeartO | ![HeartO](./svg/HeartO.svg) |
+| HotelService | ![HotelService](./svg/HotelService.svg) |
 | Plane | ![Plane](./svg/Plane.svg) |
 | Plus | ![Plus](./svg/Plus.svg) |
 | Search | ![Search](./svg/Search.svg) |
-| Service | ![Service](./svg/Service.svg) |
 | Sun | ![Sun](./svg/Sun.svg) |
 | Tag | ![Tag](./svg/Tag.svg) |
