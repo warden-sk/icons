@@ -16,4 +16,4 @@ import { Heart } from '@warden-sk/icons';
 | Plus | ![Plus](./svg/Plus.svg) |
 | Search | ![Search](./svg/Search.svg) |
 | Sun | ![Sun](./svg/Sun.svg) |
-| Tag | ![Tag](./svg/Tag.svg) |
+| Void | ![Void](./svg/Void.svg) |
