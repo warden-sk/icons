@@ -4,4 +4,5 @@
 
 import createIcon from '../createIcon';
 
+// ✅
 createIcon('Void', () => {});
