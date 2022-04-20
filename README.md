@@ -14,6 +14,5 @@ import { Heart } from '@warden-sk/icons';
 | HotelService | ![HotelService](./svg/HotelService.svg) |
 | Plane | ![Plane](./svg/Plane.svg) |
 | Plus | ![Plus](./svg/Plus.svg) |
-| Search | ![Search](./svg/Search.svg) |
 | Sun | ![Sun](./svg/Sun.svg) |
 | Void | ![Void](./svg/Void.svg) |
