@@ -6,14 +6,21 @@ import createIcon from '../createIcon';
 
 createIcon('Heart', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
-    moveTo(p(12, 21.35));
-    lineTo(pR(-1.45, -1.32));
-    cubicCurveTo(pR(-5.15, -4.67), pR(-8.55, -7.75), pR(-8.55, -11.53));
-    cubicCurveTo(vR(-3.08), pR(2.42, -5.5), pR(5.5, -5.5));
-    cubicCurveTo(hR(1.74), pR(3.41, 0.81), pR(4.5, 2.09));
-    cubicCurveTo(pR(1.09, -1.28), pR(2.76, -2.09), pR(4.5, -2.09));
-    cubicCurveTo(hR(3.08), pR(5.5, 2.42), pR(5.5, 5.5));
-    cubicCurveTo(vR(3.78), pR(-3.4, 6.86), pR(-8.55, 11.54));
-    // ?
+    moveTo(p(7, 3));
+    lineTo(hR(10));
+    cubicCurveTo(hR(0.5), hR(1), pR(1.5, 0.5));
+    cubicCurveTo(pR(0.5, 0.5), pR(0.5, 1), pR(0.5, 1.5));
+    lineTo(vR(16));
+    lineTo(pR(-7, -3));
+    lineTo(pR(-7, 3));
+    lineTo(vR(-16));
+    cubicCurveTo(vR(-0.5), vR(-1), pR(0.5, -1.5));
+    cubicCurveTo(pR(0.5, -0.5), pR(1, -0.5), pR(1.5, -0.5));
+    moveTo(pR(10, 2));
+    lineTo(hR(-10));
+    lineTo(vR(13));
+    lineTo(pR(5, -2));
+    lineTo(pR(5, 2));
+    lineTo(vR(-13));
   });
 });
