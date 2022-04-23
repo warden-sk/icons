@@ -15,7 +15,7 @@ import iconToReact from './iconToReact';
 
   const md: string[] = [
     '```ts',
-    "import { Heart } from '@warden-sk/icons';",
+    "import { ArrowRightAlt } from '@warden-sk/icons';",
     '```',
     '# Icons',
     '| Name | Icon |',

@@ -1,16 +1,16 @@
 ```ts
-import { Heart } from '@warden-sk/icons';
+import { ArrowRightAlt } from '@warden-sk/icons';
 ```
 # Icons
 | Name | Icon |
 | --- | :---: |
 | ArrowRightAlt | ![ArrowRightAlt](./svg/ArrowRightAlt.svg) |
+| Bookmark | ![Bookmark](./svg/Bookmark.svg) |
+| BookmarkAdded | ![BookmarkAdded](./svg/BookmarkAdded.svg) |
 | Bus | ![Bus](./svg/Bus.svg) |
 | Calendar | ![Calendar](./svg/Calendar.svg) |
 | ChevronLeft | ![ChevronLeft](./svg/ChevronLeft.svg) |
 | ChevronRight | ![ChevronRight](./svg/ChevronRight.svg) |
-| Heart | ![Heart](./svg/Heart.svg) |
-| HeartO | ![HeartO](./svg/HeartO.svg) |
 | HotelService | ![HotelService](./svg/HotelService.svg) |
 | Plane | ![Plane](./svg/Plane.svg) |
 | Plus | ![Plus](./svg/Plus.svg) |
