@@ -6,6 +6,7 @@ import createIcon from '../createIcon';
 
 createIcon('Calendar', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
+    /* (1) */
     moveTo(p(21, 6));
     lineTo(vR(14));
     cubicCurveTo(vR(0.5), vR(1), pR(-0.5, 1.5));
@@ -27,9 +28,7 @@ createIcon('Calendar', addPath => {
     lineTo(hR(2));
     cubicCurveTo(hR(0.5), hR(1), pR(1.5, 0.5));
     cubicCurveTo(pR(0.5, 0.5), pR(0.5, 1), pR(0.5, 1.5));
-  });
-
-  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, vR }) => {
+    /* (2) */
     moveTo(p(19, 8));
     lineTo(hR(-14));
     lineTo(vR(12));
