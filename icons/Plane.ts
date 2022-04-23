@@ -5,7 +5,7 @@
 import createIcon from '../createIcon';
 
 createIcon('Plane', addPath => {
-  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { p, pR, vR }) => {
     moveTo(p(21, 16));
     lineTo(vR(-2));
     lineTo(pR(-8, -5));
