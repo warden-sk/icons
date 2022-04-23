@@ -11,7 +11,7 @@ createIcon('Plane', addPath => {
     lineTo(pR(-8, -5));
     lineTo(vR(-5));
     cubicCurveTo(vR(-1.5), pR(-1, -2), pR(-1.5, -2));
-    cubicCurveTo(hR(-0.5), pR(-1.5, 0.5), pR(-1.5, 2));
+    cubicCurveTo(pR(-1.5, 0.5), pR(-1.5, 2));
     lineTo(vR(5));
     lineTo(pR(-8, 5));
     lineTo(vR(2));
