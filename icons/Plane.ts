@@ -9,10 +9,10 @@ createIcon('Plane', addPath => {
     moveTo(p(21, 16));
     lineTo(vR(-2));
     lineTo(pR(-8, -5));
-    lineTo(vR(-5));
-    cubicCurveTo(vR(-1.5), pR(-1, -2), pR(-1.5, -2));
-    cubicCurveTo(pR(-1.5, 0.5), pR(-1.5, 2));
-    lineTo(vR(5));
+    lineTo(vR(-5.5));
+    cubicCurveTo(vR(-0.83), pR(-0.67, -1.5), pR(-1.5, -1.5));
+    cubicCurveTo(pR(-1.5, 0.67), pR(-1.5, 1.5));
+    lineTo(vR(5.5));
     lineTo(pR(-8, 5));
     lineTo(vR(2));
     lineTo(pR(8, -2.5));
