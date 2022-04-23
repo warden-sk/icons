@@ -35,4 +35,46 @@ createIcon('Calendar', addPath => {
     lineTo(hR(14));
     lineTo(vR(-12));
   });
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
+    moveTo(p(7, 15));
+    lineTo(hR(2));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+  });
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
+    moveTo(p(11, 15));
+    lineTo(hR(2));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+  });
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
+    moveTo(p(15, 15));
+    lineTo(hR(2));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+  });
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
+    moveTo(p(15, 11));
+    lineTo(hR(2));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+  });
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
+    moveTo(p(11, 11));
+    lineTo(hR(2));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+  });
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
+    moveTo(p(7, 11));
+    lineTo(hR(2));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+  });
 });

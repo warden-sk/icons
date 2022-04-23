@@ -11,7 +11,6 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | Calendar | ![Calendar](./svg/Calendar.svg) |
 | ChevronLeft | ![ChevronLeft](./svg/ChevronLeft.svg) |
 | ChevronRight | ![ChevronRight](./svg/ChevronRight.svg) |
-| HotelService | ![HotelService](./svg/HotelService.svg) |
 | Plane | ![Plane](./svg/Plane.svg) |
 | Plus | ![Plus](./svg/Plus.svg) |
 | Sun | ![Sun](./svg/Sun.svg) |
