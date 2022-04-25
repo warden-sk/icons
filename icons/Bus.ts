@@ -30,12 +30,16 @@ createIcon('Bus', addPath => {
     lineTo(vR(4));
     lineTo(hR(-1));
     lineTo(vR(-4));
+  });
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
     moveTo(p(20, 2));
     lineTo(hR(-16));
     cubicCurveTo(hR(-0.55), pR(-1, 0.45), pR(-1, 1));
     lineTo(vR(16));
     lineTo(hR(18));
-    lineTo(vR(-16));
+    lineTo(vR(-8));
+    lineTo(vR(-4));
+    lineTo(vR(-4));
     cubicCurveTo(vR(-0.55), pR(-0.45, -1), pR(-1, -1));
     moveTo(p(19, 4));
     lineTo(hR(-14));
