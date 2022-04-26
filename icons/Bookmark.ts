@@ -6,14 +6,14 @@ import createIcon from '../createIcon';
 
 createIcon('Bookmark', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
-    moveTo(p(19, 4.5));
-    lineTo(vR(16.5));
+    moveTo(p(5, 21));
+    lineTo(vR(-17.01));
+    cubicCurveTo(vR(-0.55), pR(0.45, -0.99), pR(1, -0.99));
+    lineTo(hR(12));
+    cubicCurveTo(hR(0.55), pR(1, 0.45), pR(1, 1));
+    lineTo(vR(17));
     lineTo(pR(-7, -3));
     lineTo(pR(-7, 3));
-    lineTo(vR(-16.5));
-    cubicCurveTo(vR(-0.83), pR(0.67, -1.5), pR(1.5, -1.5));
-    lineTo(hR(11));
-    cubicCurveTo(hR(0.83), pR(1.5, 0.67), pR(1.5, 1.5));
     moveTo(p(12, 16));
     lineTo(pR(5, 2));
     lineTo(vR(-13));
