@@ -20,7 +20,7 @@ import iconToReact from './iconToReact';
     '# Icons',
     '| Name | Icon |',
     '| --- | :---: |',
-    ...IconStorage.map(({ name }) => `| ${name} | ![${name}](./ts/${name}.ts) |`),
+    ...IconStorage.map(({ name }) => `| ${name} | ![${name}](./output/${name}.svg) |`),
   ];
 
   fs.writeFile('./README.md', md.join('\n'));
