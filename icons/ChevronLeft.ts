@@ -3,18 +3,16 @@
  */
 
 import createIcon from '../createIcon';
+import storage from '../storage';
 
 createIcon('ChevronLeft', addPath => {
-  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
-    moveTo(p(14.71, 6.71));
-    cubicCurveTo(pR(0.39, 0.39), pR(0.39, 1.02), pR(0, 1.41));
-    lineTo(pR(-3.88, 3.88));
-    lineTo(pR(3.88, 3.88));
-    cubicCurveTo(pR(0.39, 0.39), pR(0.39, 1.02), pR(0, 1.41));
-    cubicCurveTo(pR(-0.39, 0.39), pR(-1.02, 0.39), hR(-1.41));
-    lineTo(pR(-4.59, -4.59));
-    cubicCurveTo(pR(-0.39, -0.39), pR(-0.39, -1.02), vR(-1.41));
-    lineTo(pR(4.59, -4.59));
-    cubicCurveTo(pR(0.39, -0.39), pR(1.02, -0.39), hR(1.41));
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
+    moveTo(p(14, 6));
+    lineTo(pR(1.41, 1.41));
+    lineTo(pR(-4.58, 4.59));
+    lineTo(pR(4.58, 4.59));
+    lineTo(pR(-1.41, 1.41));
+    lineTo(pR(-6, -6));
+    lineTo(pR(6, -6));
   });
 });

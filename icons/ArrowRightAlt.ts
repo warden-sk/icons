@@ -3,10 +3,10 @@
  */
 
 import createIcon from '../createIcon';
+import storage from '../storage';
 
-// ✅
 createIcon('ArrowRightAlt', addPath => {
-  addPath(({ lineTo, moveTo }, { hR, p, pR, vR }) => {
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
     moveTo(p(16, 16));
     lineTo(pR(4, -4));
     lineTo(pR(-4, -4));

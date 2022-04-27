@@ -6,7 +6,7 @@ import createIcon from '../createIcon';
 import storage from '../storage';
 
 createIcon('Bookmark', addPath => {
-  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
     moveTo(p(5, 3.99));
     lineTo(vR(15.49));
     cubicCurveTo(vR(0.72), pR(0.73, 1.2), pR(1.39, 0.92));
