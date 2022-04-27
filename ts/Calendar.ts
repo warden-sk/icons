@@ -7,6 +7,38 @@ import storage from '../storage';
 
 createIcon('Calendar', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
+    moveTo(p(17, 11));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+    lineTo(hR(2));
+    moveTo(p(7, 17));
+    lineTo(vR(-2));
+    lineTo(hR(2));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    moveTo(p(13, 15));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+    lineTo(hR(2));
+    moveTo(p(17, 15));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+    lineTo(hR(2));
+    moveTo(p(13, 11));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+    lineTo(hR(2));
+    moveTo(p(9, 11));
+    lineTo(vR(2));
+    lineTo(hR(-2));
+    lineTo(vR(-2));
+    lineTo(hR(2));
+  });
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
     moveTo(p(21, 21));
     cubicCurveTo(vR(storage['0.55']), pR(-storage['0.45'], 1), pR(-1, 1));
     lineTo(hR(-16));
