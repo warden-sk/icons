@@ -23,8 +23,8 @@ createIcon('Plane', addPath => {
     lineTo(vR(-2));
     lineTo(pR(8, -5));
     lineTo(vR(-5.5));
-    cubicCurveTo(vR(-0.83), pR(0.67, -1.5), pR(1.5, -1.5));
-    cubicCurveTo(hR(0.83), pR(1.5, 0.67), pR(1.5, 1.5));
+    cubicCurveTo(vR(-storage['0.83']), pR(storage['0.67'], -1.5), pR(1.5, -1.5));
+    cubicCurveTo(hR(storage['0.83']), pR(1.5, storage['0.67']), pR(1.5, 1.5));
     lineTo(vR(5.5));
   });
 });
