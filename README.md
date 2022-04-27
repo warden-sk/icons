@@ -4,14 +4,13 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 # Icons
 | Name | Icon |
 | --- | :---: |
-| ArrowRightAlt | ![ArrowRightAlt](./svg/ArrowRightAlt.svg) |
-| Bookmark | ![Bookmark](./svg/Bookmark.svg) |
-| BookmarkAdded | ![BookmarkAdded](./svg/BookmarkAdded.svg) |
-| Bus | ![Bus](./svg/Bus.svg) |
-| Calendar | ![Calendar](./svg/Calendar.svg) |
-| ChevronLeft | ![ChevronLeft](./svg/ChevronLeft.svg) |
-| ChevronRight | ![ChevronRight](./svg/ChevronRight.svg) |
-| Plane | ![Plane](./svg/Plane.svg) |
-| Plus | ![Plus](./svg/Plus.svg) |
-| Sun | ![Sun](./svg/Sun.svg) |
-| Void | ![Void](./svg/Void.svg) |
+| ArrowRightAlt | ![ArrowRightAlt](./output/ArrowRightAlt.svg) |
+| Bookmark | ![Bookmark](./output/Bookmark.svg) |
+| BookmarkAdded | ![BookmarkAdded](./output/BookmarkAdded.svg) |
+| Bus | ![Bus](./output/Bus.svg) |
+| Calendar | ![Calendar](./output/Calendar.svg) |
+| ChevronLeft | ![ChevronLeft](./output/ChevronLeft.svg) |
+| ChevronRight | ![ChevronRight](./output/ChevronRight.svg) |
+| Plane | ![Plane](./output/Plane.svg) |
+| Plus | ![Plus](./output/Plus.svg) |
+| Sun | ![Sun](./output/Sun.svg) |

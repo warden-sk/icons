@@ -7,11 +7,11 @@ import fs from 'fs/promises';
 import iconToReact from './iconToReact';
 
 (async () => {
-  const files = await fs.readdir('./icons');
+  const files = await fs.readdir('./ts');
 
-  for await (const file of files) import(`./icons/${file}`);
+  for await (const file of files) import(`./ts/${file}`);
 
-  IconStorage.map(({ name, svg }) => fs.writeFile(`./svg/${name}.svg`, svg));
+  IconStorage.map(({ name, svg }) => fs.writeFile(`./output/${name}.svg`, svg));
 
   const md: string[] = [
     '```ts',
@@ -20,7 +20,7 @@ import iconToReact from './iconToReact';
     '# Icons',
     '| Name | Icon |',
     '| --- | :---: |',
-    ...IconStorage.map(({ name }) => `| ${name} | ![${name}](./svg/${name}.svg) |`),
+    ...IconStorage.map(({ name }) => `| ${name} | ![${name}](./output/${name}.svg) |`),
   ];
 
   fs.writeFile('./README.md', md.join('\n'));
