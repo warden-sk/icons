@@ -14,3 +14,4 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | Plane | ![Plane](./output/Plane.svg) |
 | Plus | ![Plus](./output/Plus.svg) |
 | Sun | ![Sun](./output/Sun.svg) |
+| Void | ![Void](./output/Void.svg) |
