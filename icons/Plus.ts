@@ -3,21 +3,26 @@
  */
 
 import createIcon from '../createIcon';
+import storage from '../storage';
 
 createIcon('Plus', addPath => {
-  addPath(({ lineTo, moveTo }, { hR, p, vR }) => {
-    moveTo(p(13, 13));
-    lineTo(hR(6));
-    lineTo(vR(-2));
-    lineTo(hR(-6));
-    lineTo(vR(-6));
-    lineTo(hR(-2));
-    lineTo(vR(6));
-    lineTo(hR(-6));
-    lineTo(vR(2));
-    lineTo(hR(6));
-    lineTo(vR(6));
-    lineTo(hR(2));
-    lineTo(vR(-6));
+  addPath(({ cubicCurveTo, lineTo, moveTo }, { hR, p, pR, vR }) => {
+    moveTo(p(18, 13));
+    cubicCurveTo(hR(storage['0.55']), pR(1, -storage['0.45']), pR(1, -1));
+    cubicCurveTo(vR(-storage['0.55']), pR(-storage['0.45'], -1), pR(-1, -1));
+    lineTo(hR(-5));
+    lineTo(vR(-5));
+    cubicCurveTo(vR(-storage['0.55']), pR(-storage['0.45'], -1), pR(-1, -1));
+    cubicCurveTo(hR(-storage['0.55']), pR(-1, storage['0.45']), pR(-1, 1));
+    lineTo(vR(5));
+    lineTo(hR(-5));
+    cubicCurveTo(hR(-storage['0.55']), pR(-1, storage['0.45']), pR(-1, 1));
+    cubicCurveTo(vR(storage['0.55']), pR(storage['0.45'], 1), pR(1, 1));
+    lineTo(hR(5));
+    lineTo(vR(5));
+    cubicCurveTo(vR(storage['0.55']), pR(storage['0.45'], 1), pR(1, 1));
+    cubicCurveTo(hR(storage['0.55']), pR(1, -storage['0.45']), pR(1, -1));
+    lineTo(vR(-5));
+    lineTo(hR(5));
   });
 });
