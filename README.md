@@ -5,6 +5,7 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | Name | Icon |
 | --- | :---: |
 | ArrowRightAlt | ![ArrowRightAlt](./output/ArrowRightAlt.svg) |
+| Bin | ![Bin](./output/Bin.svg) |
 | Bookmark | ![Bookmark](./output/Bookmark.svg) |
 | BookmarkAdded | ![BookmarkAdded](./output/BookmarkAdded.svg) |
 | Bus | ![Bus](./output/Bus.svg) |
