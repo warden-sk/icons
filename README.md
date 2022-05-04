@@ -12,6 +12,7 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | Calendar | ![Calendar](./output/Calendar.svg) |
 | ChevronLeft | ![ChevronLeft](./output/ChevronLeft.svg) |
 | ChevronRight | ![ChevronRight](./output/ChevronRight.svg) |
+| Filter | ![Filter](./output/Filter.svg) |
 | Plane | ![Plane](./output/Plane.svg) |
 | Plus | ![Plus](./output/Plus.svg) |
 | Sun | ![Sun](./output/Sun.svg) |
