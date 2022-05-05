@@ -13,7 +13,7 @@ function iconToReact({ name, svg }: typeof IconStorage.icons[number]): string {
     )
     .replace(/width="[^"]+"/, 'width={size}');
 
-  return `export const ${name} = ({ className, size = 24, style, ...$ }: B<JSX.IntrinsicElements['svg']> & { size?: number }) => ${svg};`;
+  return `export const ${name} = ({ className, size = 24, style, ...$ }: EnhancedElement<JSX.IntrinsicElements['svg']> & { size?: number }) => ${svg};`;
 }
 
 export default iconToReact;
