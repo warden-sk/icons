@@ -10,6 +10,7 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | BookmarkAdded | ![BookmarkAdded](./output/BookmarkAdded.svg) |
 | Bus | ![Bus](./output/Bus.svg) |
 | Calendar | ![Calendar](./output/Calendar.svg) |
+| Car | ![Car](./output/Car.svg) |
 | ChevronLeft | ![ChevronLeft](./output/ChevronLeft.svg) |
 | ChevronRight | ![ChevronRight](./output/ChevronRight.svg) |
 | Filter | ![Filter](./output/Filter.svg) |
