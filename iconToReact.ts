@@ -2,7 +2,7 @@
  * Copyright 2022 Marek Kobida
  */
 
-import IconStorage from './IconStorage';
+import type IconStorage from './IconStorage';
 
 function iconToReact({ name, svg }: typeof IconStorage.icons[number]): string {
   svg = svg
