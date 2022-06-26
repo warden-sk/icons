@@ -9,7 +9,7 @@ function iconToReact({ name, svg }: typeof IconStorage.icons[number]): string {
     .replace(/(<svg)/, svg => `${svg} {...$}`)
     .replace(
       /height="[^"]+"/,
-      `className={className ? \`icon \${className}\` : 'icon'} height={size} style={{ minHeight: size, minWidth: size, ...style }}`
+      `className={className ? \`icon \${className}\` : 'icon'} height={size} style={{ height: size, width: size, ...style }}`
     )
     .replace(/width="[^"]+"/, 'width={size}');
 
