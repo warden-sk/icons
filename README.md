@@ -5,7 +5,6 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | Name | Icon |
 | --- | :---: |
 | ArrowRightAlt | ![ArrowRightAlt](./output/ArrowRightAlt.svg) |
-| Bin | ![Bin](./output/Bin.svg) |
 | Bookmark | ![Bookmark](./output/Bookmark.svg) |
 | BookmarkAdded | ![BookmarkAdded](./output/BookmarkAdded.svg) |
 | Bus | ![Bus](./output/Bus.svg) |
@@ -13,6 +12,7 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | Car | ![Car](./output/Car.svg) |
 | ChevronLeft | ![ChevronLeft](./output/ChevronLeft.svg) |
 | ChevronRight | ![ChevronRight](./output/ChevronRight.svg) |
+| Delete | ![Delete](./output/Delete.svg) |
 | Filter | ![Filter](./output/Filter.svg) |
 | Plane | ![Plane](./output/Plane.svg) |
 | Plus | ![Plus](./output/Plus.svg) |
