@@ -3,7 +3,7 @@
  */
 
 import createIcon from '../createIcon';
-import storage from '../storage';
+
 
 createIcon('BookmarkAdded', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {

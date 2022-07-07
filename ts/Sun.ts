@@ -3,43 +3,43 @@
  */
 
 import createIcon from '../createIcon';
-import storage from '../storage';
+
 
 createIcon('Sun', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
     moveTo(p(11, 2));
-    cubicCurveTo(vR(-storage['0.55']), pR(storage['0.45'], -1), pR(1, -1));
-    cubicCurveTo(hR(storage['0.55']), pR(1, storage['0.45']), pR(1, 1));
+    cubicCurveTo(vR(-0.55), pR(0.45, -1), pR(1, -1));
+    cubicCurveTo(hR(0.55), pR(1, 0.45), pR(1, 1));
     lineTo(vR(2));
-    cubicCurveTo(vR(storage['0.55']), pR(-storage['0.45'], 1), pR(-1, 1));
-    cubicCurveTo(hR(-storage['0.55']), pR(-1, -storage['0.45']), pR(-1, -1));
+    cubicCurveTo(vR(0.55), pR(-0.45, 1), pR(-1, 1));
+    cubicCurveTo(hR(-0.55), pR(-1, -0.45), pR(-1, -1));
     lineTo(vR(-2));
     moveTo(p(20, 11));
-    cubicCurveTo(hR(-storage['0.55']), pR(-1, storage['0.45']), pR(-1, 1));
-    cubicCurveTo(vR(storage['0.55']), pR(storage['0.45'], 1), pR(1, 1));
+    cubicCurveTo(hR(-0.55), pR(-1, 0.45), pR(-1, 1));
+    cubicCurveTo(vR(0.55), pR(0.45, 1), pR(1, 1));
     lineTo(hR(2));
-    cubicCurveTo(hR(storage['0.55']), pR(1, -storage['0.45']), pR(1, -1));
-    cubicCurveTo(vR(-storage['0.55']), pR(-storage['0.45'], -1), pR(-1, -1));
+    cubicCurveTo(hR(0.55), pR(1, -0.45), pR(1, -1));
+    cubicCurveTo(vR(-0.55), pR(-0.45, -1), pR(-1, -1));
     lineTo(hR(-2));
     moveTo(p(5, 12));
-    cubicCurveTo(vR(-storage['0.55']), pR(-storage['0.45'], -1), pR(-1, -1));
+    cubicCurveTo(vR(-0.55), pR(-0.45, -1), pR(-1, -1));
     lineTo(hR(-2));
-    cubicCurveTo(hR(-storage['0.55']), pR(-1, storage['0.45']), pR(-1, 1));
-    cubicCurveTo(vR(storage['0.55']), pR(storage['0.45'], 1), pR(1, 1));
+    cubicCurveTo(hR(-0.55), pR(-1, 0.45), pR(-1, 1));
+    cubicCurveTo(vR(0.55), pR(0.45, 1), pR(1, 1));
     lineTo(hR(2));
-    cubicCurveTo(hR(storage['0.55']), pR(1, -storage['0.45']), pR(1, -1));
+    cubicCurveTo(hR(0.55), pR(1, -0.45), pR(1, -1));
     moveTo(p(11, 22));
-    cubicCurveTo(vR(storage['0.55']), pR(storage['0.45'], 1), pR(1, 1));
-    cubicCurveTo(hR(storage['0.55']), pR(1, -storage['0.45']), pR(1, -1));
+    cubicCurveTo(vR(0.55), pR(0.45, 1), pR(1, 1));
+    cubicCurveTo(hR(0.55), pR(1, -0.45), pR(1, -1));
     lineTo(vR(-2));
-    cubicCurveTo(vR(-storage['0.55']), pR(-storage['0.45'], -1), pR(-1, -1));
-    cubicCurveTo(hR(-storage['0.55']), pR(-1, storage['0.45']), pR(-1, 1));
+    cubicCurveTo(vR(-0.55), pR(-0.45, -1), pR(-1, -1));
+    cubicCurveTo(hR(-0.55), pR(-1, 0.45), pR(-1, 1));
     lineTo(vR(2));
     moveTo(p(7, 12));
-    cubicCurveTo(vR(-storage['2.76']), pR(2.24, -5), pR(5, -5));
-    cubicCurveTo(hR(storage['2.76']), pR(5, 2.24), pR(5, 5));
-    cubicCurveTo(vR(storage['2.76']), pR(-2.24, 5), pR(-5, 5));
-    cubicCurveTo(hR(-storage['2.76']), pR(-5, -2.24), pR(-5, -5));
+    cubicCurveTo(vR(-2.76), pR(2.24, -5), pR(5, -5));
+    cubicCurveTo(hR(2.76), pR(5, 2.24), pR(5, 5));
+    cubicCurveTo(vR(2.76), pR(-2.24, 5), pR(-5, 5));
+    cubicCurveTo(hR(-2.76), pR(-5, -2.24), pR(-5, -5));
     moveTo(p(4.58, 5.99));
     cubicCurveTo(pR(-0.39, -0.39), pR(-0.39, -1.02), vR(-1.41));
     cubicCurveTo(pR(0.39, -0.39), pR(1.02, -0.39), hR(1.42));

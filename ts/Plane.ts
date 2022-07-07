@@ -3,15 +3,15 @@
  */
 
 import createIcon from '../createIcon';
-import storage from '../storage';
+
 
 createIcon('Plane', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
     moveTo(p(21, 14));
     lineTo(pR(-8, -5));
     lineTo(vR(-5.5));
-    cubicCurveTo(vR(-storage['0.83']), pR(-storage['0.67'], -1.5), pR(-1.5, -1.5));
-    cubicCurveTo(hR(-storage['0.83']), pR(-1.5, storage['0.67']), pR(-1.5, 1.5));
+    cubicCurveTo(vR(-0.83), pR(-0.67, -1.5), pR(-1.5, -1.5));
+    cubicCurveTo(hR(-0.83), pR(-1.5, 0.67), pR(-1.5, 1.5));
     lineTo(vR(5.5));
     lineTo(pR(-8, 5));
     lineTo(vR(2));
