@@ -7,13 +7,14 @@ import storage from '../storage';
 
 createIcon('BookmarkAdded', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
-    moveTo(p(12, 18));
-    lineTo(pR(-8, 4));
-    lineTo(vR(-19));
-    cubicCurveTo(vR(-storage['0.55']), pR(storage['0.45'], -1), pR(1, -1));
-    lineTo(hR(14));
-    cubicCurveTo(hR(storage['0.55']), pR(1, storage['0.45']), pR(1, 1));
-    lineTo(vR(19));
-    lineTo(pR(-8, -4));
+    moveTo(p(4.46, 5.46));
+    cubicCurveTo(pR(1.95, -1.95), pR(5.12, -1.95), hR(7.07));
+    lineTo(pR(0.46, 0.46));
+    lineTo(pR(0.46, -0.46));
+    cubicCurveTo(pR(1.95, -1.95), pR(5.12, -1.95), hR(7.07));
+    cubicCurveTo(pR(1.95, 1.95), pR(1.95, 5.12), vR(7.07));
+    lineTo(pR(-7.54, 7.54));
+    lineTo(pR(-7.54, -7.54));
+    cubicCurveTo(pR(-1.95, -1.95), pR(-1.95, -5.12), vR(-7.07));
   });
 });
