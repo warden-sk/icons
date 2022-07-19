@@ -13,6 +13,7 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | ChevronLeft | ![ChevronLeft](./output/ChevronLeft.svg) |
 | ChevronRight | ![ChevronRight](./output/ChevronRight.svg) |
 | Delete | ![Delete](./output/Delete.svg) |
+| Facebook | ![Facebook](./output/Facebook.svg) |
 | Filter | ![Filter](./output/Filter.svg) |
 | Plane | ![Plane](./output/Plane.svg) |
 | Plus | ![Plus](./output/Plus.svg) |
