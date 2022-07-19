@@ -1,7 +1,10 @@
 {
   "devDependencies": {
+    "@types/warden-sk__design": "file:../types-design",
     "@typescript-eslint/eslint-plugin": "^5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
+    "@warden-sk/babel-plugin": "file:../design/packages/babel-plugin",
+    "@warden-sk/design": "file:../design/packages/design",
     "@warden-sk/eslint-config": "github:warden-sk/eslint-config",
     "eslint": "^8.20.0",
     "eslint-plugin-prettier": "^4.2.1",
