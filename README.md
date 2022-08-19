@@ -15,9 +15,11 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | Delete | ![Delete](./output/Delete.svg) |
 | Facebook | ![Facebook](./output/Facebook.svg) |
 | Filter | ![Filter](./output/Filter.svg) |
+| HotelService | ![HotelService](./output/HotelService.svg) |
 | Instagram | ![Instagram](./output/Instagram.svg) |
 | Plane | ![Plane](./output/Plane.svg) |
 | Plus | ![Plus](./output/Plus.svg) |
+| Search | ![Search](./output/Search.svg) |
 | Sun | ![Sun](./output/Sun.svg) |
 | Void | ![Void](./output/Void.svg) |
 | Youtube | ![Youtube](./output/Youtube.svg) |

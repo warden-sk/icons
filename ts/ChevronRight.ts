@@ -7,12 +7,12 @@ import createIcon from '../createIcon';
 
 createIcon('ChevronRight', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
-    moveTo(p(10, 6));
-    lineTo(pR(-1.41, 1.41));
-    lineTo(pR(4.58, 4.59));
-    lineTo(pR(-4.58, 4.59));
-    lineTo(pR(1.41, 1.41));
-    lineTo(pR(6, -6));
-    lineTo(pR(-6, -6));
+    moveTo(p(9.46, 18.56));
+    lineTo(pR(-1.36, -1.36));
+    lineTo(pR(5.15, -5.16));
+    lineTo(pR(-5.15, -5.15));
+    lineTo(pR(1.36, -1.36));
+    lineTo(pR(6.52, 6.52));
+    lineTo(pR(-6.52, 6.52));
   });
 });
