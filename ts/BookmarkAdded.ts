@@ -7,16 +7,14 @@ import createIcon from '../createIcon';
 
 createIcon('BookmarkAdded', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
-    moveTo(p(5.04, 9.61));
-    cubicCurveTo(vR(2.49), pR(1.44, 4.02), pR(6.78, 8.36));
-    lineTo(pR(0.23, 0.2));
-    lineTo(pR(0.22, -0.2));
-    cubicCurveTo(pR(5.34, -4.34), pR(6.79, -5.87), pR(6.79, -8.36));
-    cubicCurveTo(vR(-2.03), pR(-1.65, -3.68), pR(-3.68, -3.68));
-    cubicCurveTo(hR(-1.59), pR(-2.53, 0.82), pR(-3.3, 1.7));
-    lineTo(pR(-0.02, 0.02));
-    lineTo(pR(-0.02, -0.02));
-    cubicCurveTo(pR(-0.78, -0.88), pR(-1.71, -1.7), pR(-3.3, -1.7));
-    cubicCurveTo(hR(-2.04), pR(-3.68, 1.65), pR(-3.68, 3.68));
+    moveTo(p(11.68, 18.6));
+    cubicCurveTo(pR(-5.91, -4.81), pR(-7.52, -6.51), pR(-7.52, -9.3));
+    cubicCurveTo(vR(-2.3), pR(1.87, -4.17), pR(4.17, -4.17));
+    cubicCurveTo(hR(1.75), pR(2.8, 0.87), pR(3.66, 1.84));
+    cubicCurveTo(pR(0.87, -0.97), pR(1.92, -1.84), pR(3.66, -1.84));
+    cubicCurveTo(hR(2.3), pR(4.17, 1.87), pR(4.17, 4.17));
+    cubicCurveTo(vR(2.79), pR(-1.6, 4.49), pR(-7.52, 9.3));
+    lineTo(pR(-0.3, 0.27));
+    lineTo(pR(-0.32, -0.27));
   });
 });
