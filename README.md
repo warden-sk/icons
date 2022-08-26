@@ -22,4 +22,5 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | Search | ![Search](./output/Search.svg) |
 | Sun | ![Sun](./output/Sun.svg) |
 | Void | ![Void](./output/Void.svg) |
+| Yes | ![Yes](./output/Yes.svg) |
 | Youtube | ![Youtube](./output/Youtube.svg) |

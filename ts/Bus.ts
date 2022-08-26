@@ -46,7 +46,6 @@ createIcon('Bus', addPath => {
     cubicCurveTo(pR(0.21, -0.73), pR(0.9, -1.25), pR(1.67, -1.25));
     cubicCurveTo(hR(0.77), pR(1.45, 0.52), pR(1.67, 1.25));
     lineTo(hR(0.84));
-    lineTo(vR(0));
     moveTo(p(15.74, 10.71));
     cubicCurveTo(pR(0.13, 0.26), pR(0.96, 1.77), pR(3.76, 1.93));
     lineTo(vR(-1.31));
