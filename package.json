@@ -1,16 +1,16 @@
 {
   "devDependencies": {
     "@types/warden-sk__design": "file:../types-design",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
     "@warden-sk/babel-plugin": "file:../design/packages/babel-plugin",
     "@warden-sk/design": "file:../design/packages/design",
     "@warden-sk/eslint-config": "github:warden-sk/eslint-config",
-    "eslint": "^8.23.0",
+    "eslint": "^8.23.1",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.3"
   },
   "name": "@warden-sk/icons",
   "repository": {
