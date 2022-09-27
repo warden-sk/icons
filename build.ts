@@ -2,16 +2,17 @@
  * Copyright 2022 Marek Kobida
  */
 
-import IconStorage from './IconStorage';
 import fs from 'fs/promises';
+import path from 'path';
+import IconStorage from './IconStorage';
 import iconToReact from './iconToReact';
 
 (async () => {
-  const files = await fs.readdir('./ts');
+  const files = await fs.readdir(path.resolve(__dirname,'./ts'));
 
-  for await (const file of files) import(`./ts/${file}`);
+  for await (const file of files) import(path.resolve(__dirname,'./ts',file));
 
-  IconStorage.map(({ name, svg }) => fs.writeFile(`./output/${name}.svg`, svg));
+  IconStorage.map(({ name, svg }) => fs.writeFile(path.resolve(__dirname,'./output',`${name}.svg`), svg));
 
   const md: string[] = [
     '```ts',
@@ -23,9 +24,9 @@ import iconToReact from './iconToReact';
     ...IconStorage.map(({ name }) => `| ${name} | ![${name}](./output/${name}.svg) |`),
   ];
 
-  fs.writeFile('./README.md', md.join('\n'));
+  fs.writeFile(path.resolve(__dirname,'./README.md'), md.join('\n'));
 
   const tsx: string[] = ["import React from 'react';", ...IconStorage.map(iconToReact)];
 
-  fs.writeFile('./index.tsx', tsx.join('\n'));
+  fs.writeFile(path.resolve(__dirname,'./index.tsx'), tsx.join('\n'));
 })();
