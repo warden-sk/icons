@@ -7,18 +7,10 @@ import createIcon from '../createIcon';
 
 createIcon('Delete', addPath => {
   addPath(({ cubicCurveTo, lineTo, moveTo }, { h, hR, p, pR, v, vR }) => {
-    moveTo(p(5.9, 17.4));
-    lineTo(pR(5.4, -5.4));
-    lineTo(pR(-5.4, -5.4));
-    lineTo(pR(0.7, -0.7));
-    lineTo(pR(5.4, 5.4));
-    lineTo(pR(5.4, -5.4));
-    lineTo(pR(0.7, 0.7));
-    lineTo(pR(-5.4, 5.4));
-    lineTo(pR(5.4, 5.4));
-    lineTo(pR(-0.7, 0.7));
-    lineTo(pR(-5.4, -5.4));
-    lineTo(pR(-5.4, 5.4));
-    lineTo(pR(-0.7, -0.7));
+    moveTo(p(5, 13));
+    lineTo(hR(14));
+    lineTo(vR(-2));
+    lineTo(hR(-14));
+    lineTo(vR(2));
   });
 });
