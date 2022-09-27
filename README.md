@@ -22,7 +22,9 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | Plane | ![Plane](./output/Plane.svg) |
 | Plus | ![Plus](./output/Plus.svg) |
 | Search | ![Search](./output/Search.svg) |
+| Sort | ![Sort](./output/Sort.svg) |
 | Sun | ![Sun](./output/Sun.svg) |
+| UpDown | ![UpDown](./output/UpDown.svg) |
 | Void | ![Void](./output/Void.svg) |
 | Yes | ![Yes](./output/Yes.svg) |
 | Youtube | ![Youtube](./output/Youtube.svg) |
