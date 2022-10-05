@@ -19,6 +19,8 @@ import { ArrowRightAlt } from '@warden-sk/icons';
 | Filter | ![Filter](./output/Filter.svg) |
 | HotelService | ![HotelService](./output/HotelService.svg) |
 | Instagram | ![Instagram](./output/Instagram.svg) |
+| Menu | ![Menu](./output/Menu.svg) |
+| MenuOpen | ![MenuOpen](./output/MenuOpen.svg) |
 | Notification | ![Notification](./output/Notification.svg) |
 | Place | ![Place](./output/Place.svg) |
 | Plane | ![Plane](./output/Plane.svg) |
