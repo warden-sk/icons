@@ -1,13 +1,13 @@
 {
   "devDependencies": {
-    "@types/node": "^18.11.9",
+    "@types/node": "^18.11.10",
     "@types/warden-sk__design": "file:../types-design",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
     "@warden-sk/babel-plugin": "file:../design/packages/babel-plugin",
     "@warden-sk/design": "file:../design/packages/design",
     "@warden-sk/eslint-config": "github:warden-sk/eslint-config",
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.0",
     "react": "^18.2.0",
