@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
     "@types/warden-sk__design": "file:../types-design",
     "@warden-sk/babel-plugin": "file:../design/packages/babel-plugin",
     "@warden-sk/design": "file:../design/packages/design",
