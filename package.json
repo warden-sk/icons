@@ -1,12 +1,12 @@
 {
   "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.27",
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.28",
     "@types/warden-sk__design": "file:../types-design",
     "@warden-sk/babel-plugin": "file:../design/packages/babel-plugin",
     "@warden-sk/design": "file:../design/packages/design",
     "react": "^18.2.0",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   },
   "name": "@warden-sk/icons",
   "repository": {
