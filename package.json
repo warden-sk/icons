@@ -1,15 +1,10 @@
 {
-  "dependencies": {
-    "@warden-sk/babel-plugin": "file:../design/packages/babel-plugin",
-    "@warden-sk/compiler": "file:../compiler",
-    "@warden-sk/design": "file:../design/packages/design"
-  },
   "devDependencies": {
     "@types/node": "^18.15.11",
-    "@types/react": "^18.0.31",
+    "@types/react": "^18.0.32",
     "@types/warden-sk__design": "file:../types-design",
     "react": "^18.2.0",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.3"
   },
   "name": "@warden-sk/icons",
   "repository": {
